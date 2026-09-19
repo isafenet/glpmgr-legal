@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://jaywalesglpmgr-creator.github.io/glpmgr-legal/sitemap.xml
+Sitemap: https://jaywales-apps.github.io/glpmgr-legal/sitemap.xml
