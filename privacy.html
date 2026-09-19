@@ -34,7 +34,7 @@
   <div class="doc-tabs" role="navigation" aria-label="Legal and support pages"><a href="terms.html">Terms of Use</a><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="support.html">Support</a></div>
   <p class="eyebrow">Privacy Policy</p>
   <h1>How GLPMGR handles your data</h1>
-  <p class="meta">Effective September 15, 2026</p>
+  <p class="meta">Effective September 19, 2026</p>
   <div class="lede">
       <strong>In short:</strong> GLPMGR keeps your health data on your device (and in your own iCloud, if you turn that on). There are no GLPMGR servers, no analytics, and no advertising in this app — full stop.
     </div>
@@ -83,9 +83,9 @@
 
   <section class="clause" id="healthkit">
     <h2 class="clause-title"><span class="num">3</span> Health app (HealthKit)</h2>
-    <p>If you grant permission, GLPMGR can read from and write to Apple's Health app — for example, to log your weight there or pull in existing weight readings. This exchange happens through Apple's HealthKit framework directly on your device.</p>
+    <p>GLPMGR can use Apple's Health app in two optional ways, both off by default and both only if you grant permission: it can <strong>write</strong> the weight you log to Health, and it can <strong>read</strong> today's protein, water and dietary energy (calorie) totals from whichever food-tracking app you already use, to show on the Today screen. These exchanges happen through Apple's HealthKit framework directly on your device.</p>
     <ul>
-      <li>GLPMGR only requests the specific HealthKit data types it needs (such as body mass) — never your full health record.</li>
+      <li>GLPMGR only requests the specific HealthKit data types it needs — it writes body mass, and reads protein, water and dietary energy totals — never your full health record. It does not read your weight history from Health, and it never writes nutrition data.</li>
       <li>You can grant or revoke this access at any time in <strong>Settings → Privacy &amp; Security → Health → GLPMGR</strong>.</li>
       <li>Health data GLPMGR reads is used solely to display and calculate information inside the app. It is never transmitted to us or to any third party.</li>
     </ul>
@@ -98,7 +98,7 @@
 
   <section class="clause" id="storage">
     <h2 class="clause-title"><span class="num">5</span> Where your data lives</h2>
-    <p>Everything you record is stored locally on your device in a private, sandboxed app database, shared only between the GLPMGR app and its Today/Next Dose widgets so they can display consistent, up-to-date information. GLPMGR does not operate any backend servers, and nothing you enter is uploaded anywhere by default.</p>
+    <p>Everything you record is stored locally on your device in a private, sandboxed app database, shared only between the GLPMGR app, its Today/Next Dose widgets and Live Activity, and — if you use the GLPMGR Apple Watch app — your paired Apple Watch. The Watch receives your next dose, medication and recent weights from your iPhone, and can send a weight you log on the Watch back to it; these transfers go directly between your own devices using Apple's WatchConnectivity, never through a server. GLPMGR does not operate any backend servers, and nothing you enter is uploaded anywhere by default.</p>
   </section>
 
   <section class="clause" id="icloud">
@@ -114,22 +114,22 @@
 
   <section class="clause" id="notifications">
     <h2 class="clause-title"><span class="num">7</span> Notifications</h2>
-    <p>Dose reminders and other alerts are scheduled entirely on-device using Apple's local notification system. No reminder data is sent to a server to trigger these notifications — your phone handles the whole thing offline.</p>
+    <p>Dose reminders, low-supply alerts and any other reminders you turn on (such as a weekly weigh-in reminder) are scheduled entirely on-device using Apple's local notification system. No reminder data is sent to a server to trigger these notifications — your phone handles the whole thing offline.</p>
   </section>
 
   <section class="clause" id="subscriptions">
     <h2 class="clause-title"><span class="num">8</span> Subscriptions &amp; payment</h2>
-    <p>GLPMGR Premium is sold as an auto-renewable subscription through Apple's App Store using StoreKit. All payment details — card numbers, billing address, and purchase history — are collected and processed by Apple, not by GLPMGR. We only receive confirmation from Apple that an active subscription exists, so we can unlock premium features on your device.</p>
+    <p>GLPMGR is sold as an auto-renewable subscription (monthly or yearly, with a 7-day free trial on the monthly plan for eligible new subscribers) through Apple's App Store using StoreKit. There is no free tier. All payment details — card numbers, billing address, and purchase history — are collected and processed by Apple, not by GLPMGR. The app checks with Apple's StoreKit, on your device, whether an active subscription exists, so it can unlock; we don't receive your payment details or purchase history.</p>
   </section>
 
   <section class="clause" id="export">
     <h2 class="clause-title"><span class="num">9</span> Exporting your data</h2>
-    <p>GLPMGR lets you export your entries as a JSON or CSV file at any time from Settings. This export is generated entirely on your device and handed to iOS's native share sheet — no network request is made and no copy is sent to us. Where you send that file afterward (email, Files, AirDrop, a doctor's portal) is entirely up to you.</p>
+    <p>GLPMGR lets you export your entries as a JSON or CSV file, or as a PDF report, at any time from Settings. This export is generated entirely on your device and handed to iOS's native file-saving screen — no network request is made and no copy is sent to us. Where you send that file afterward (email, Files, AirDrop, a doctor's portal) is entirely up to you. You can also import a previously exported file; it is read entirely on your device.</p>
   </section>
 
   <section class="clause" id="no-tracking">
     <h2 class="clause-title"><span class="num">10</span> No analytics, ads, or tracking</h2>
-    <p>GLPMGR contains no analytics SDKs, no advertising networks, and no third-party trackers of any kind. We do not know how often you open the app, which screens you visit, or anything else about your usage. There is nothing to opt out of, because nothing is being collected.</p>
+    <p>GLPMGR contains no analytics SDKs, no advertising networks, and no third-party trackers of any kind. We do not know how often you open the app, which screens you visit, or anything else about your usage. There is nothing to opt out of, because nothing is being collected. The app itself makes no network requests to us. The links in the app to the Terms of Use and this Privacy Policy open web pages hosted on GitHub Pages in your browser; like any website visit, that request is visible to the web host, and it is separate from anything you record in GLPMGR.</p>
   </section>
 
   <section class="clause" id="sharing">
