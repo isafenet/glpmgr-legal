@@ -249,3 +249,16 @@ table.datatable td.num-col{font-variant-numeric:tabular-nums;white-space:nowrap}
 
 .nb{white-space:nowrap}
 @media (max-width:900px){.devices .art .watch{right:0}.devices .art .watch.w2{left:0}}
+
+/* ---------- light & dark pairs, reminders ---------- */
+.pairs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;max-width:1000px;margin:0 auto}
+.pair{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;align-items:start}
+.pair .mode{font:700 .78rem/1 var(--font-display);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);text-align:center}
+.pair figcaption{grid-column:1/-1;text-align:center;font:800 1.08rem var(--font-display);margin-top:10px}
+.notif{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.notif-phones{display:flex;gap:24px;justify-content:center;align-items:flex-start}
+.notif-phones .phone{width:min(250px,46%)}
+.notif-phones .phone:nth-child(2){margin-top:56px}
+.banners{display:grid;gap:12px;margin-top:30px}
+.banners img{display:block;width:100%;height:auto;filter:drop-shadow(0 10px 18px rgba(0,60,110,.28))}
+@media (max-width:900px){.pairs{grid-template-columns:1fr;gap:56px}.notif{grid-template-columns:1fr}.notif-phones{margin-top:8px}}
