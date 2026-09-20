@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://glpmgr.isafenet.app/</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://glpmgr.isafenet.app/terms.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://glpmgr.isafenet.app/privacy.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://glpmgr.isafenet.app/support.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://glpmgr.isafenet.app/site-guidance.html</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://glpmgr.isafenet.app/</loc><lastmod>2026-09-21</lastmod><priority>1.0</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/faq.html</loc><lastmod>2026-09-21</lastmod><priority>0.8</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/site-guidance.html</loc><lastmod>2026-09-21</lastmod><priority>0.8</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/mounjaro-injection-sites.html</loc><lastmod>2026-09-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/wegovy-injection-sites.html</loc><lastmod>2026-09-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/ozempic-injection-sites.html</loc><lastmod>2026-09-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/saxenda-injection-sites.html</loc><lastmod>2026-09-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/trulicity-injection-sites.html</loc><lastmod>2026-09-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/bydureon-bcise-injection-sites.html</loc><lastmod>2026-09-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/zepbound-injection-sites.html</loc><lastmod>2026-09-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/victoza-injection-sites.html</loc><lastmod>2026-09-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/byetta-injection-sites.html</loc><lastmod>2026-09-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/support.html</loc><lastmod>2026-09-21</lastmod><priority>0.5</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/privacy.html</loc><lastmod>2026-09-21</lastmod><priority>0.3</priority></url>
+  <url><loc>https://glpmgr.isafenet.app/terms.html</loc><lastmod>2026-09-21</lastmod><priority>0.3</priority></url>
 </urlset>
