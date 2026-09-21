@@ -78,6 +78,7 @@
       <span class="badge"><span class="dot"></span>Weight entries</span>
       <span class="badge"><span class="dot"></span>Symptoms</span>
       <span class="badge"><span class="dot"></span>Body measurements</span>
+      <span class="badge"><span class="dot"></span>Blood glucose readings you type in (if you turn on blood glucose)</span>
       <span class="badge"><span class="dot"></span>Water intake (if you turn on hydration tracking)</span>
       <span class="badge"><span class="dot"></span>Progress photos</span>
       <span class="badge"><span class="dot"></span>Medication schedules &amp; reminders</span>
@@ -87,11 +88,11 @@
 
   <section class="clause" id="healthkit">
     <h2 class="clause-title"><span class="num">3</span> Health app (HealthKit)</h2>
-    <p>GLPMGR can use Apple's Health app in three optional ways, all off by default and all only if you grant permission: it can <strong>write</strong> the weight you log to Health; it can <strong>read</strong> today's protein, water and dietary energy (calorie) totals from whichever food-tracking app you already use, to show on the Today screen; and it can <strong>read</strong> your blood glucose readings, from whichever app or monitor writes them to Health, to show a 7-day average. These exchanges happen through Apple's HealthKit framework directly on your device.</p>
+    <p>GLPMGR can use Apple's Health app in three optional ways, all off by default and all only if you grant permission: it can <strong>write</strong> the weight you log to Health; it can <strong>read</strong> today's protein, water and dietary energy (calorie) totals from whichever food-tracking app you already use, to show on the Today screen; and it can <strong>read</strong> your blood glucose readings, from whichever app or monitor writes them to Health, to show a 7-day average, charts and, if you ask for it, a page in your doctor report. These exchanges happen through Apple's HealthKit framework directly on your device.</p>
     <ul>
       <li>GLPMGR only requests the specific HealthKit data types it needs — it writes body mass, and reads protein, water, dietary energy and blood glucose — never your full health record. It does not read your weight history from Health, and it never writes nutrition data or blood glucose.</li>
       <li>You can grant or revoke this access at any time in <strong>Settings → Privacy &amp; Security → Health → GLPMGR</strong>.</li>
-      <li>Health data GLPMGR reads is used solely to display and calculate information inside the app. It is never transmitted to us or to any third party, and blood glucose read from Health is not stored by GLPMGR: it is read when needed, held in memory to work out the average, and discarded.</li>
+      <li>Health data GLPMGR reads is used solely to display and calculate information inside the app. It is never transmitted to us or to any third party, and blood glucose read from Health is not stored by GLPMGR: it is read when needed, held in memory to draw the average and charts, and discarded. The one place it can appear outside the app is the PDF report you choose to generate (see section 8). Blood glucose readings you type in yourself are different: they are stored on your device with your other entries, like body measurements.</li>
     </ul>
   </section>
 
@@ -117,7 +118,7 @@
 
   <section class="clause" id="export">
     <h2 class="clause-title"><span class="num">8</span> Exporting your data</h2>
-    <p>GLPMGR lets you export your entries as a JSON or CSV file, or as a PDF report, at any time from Settings. This export is generated entirely on your device and handed to iOS's native file-saving screen — no network request is made and no copy is sent to us. Where you send that file afterward (email, Files, AirDrop, a doctor's portal) is entirely up to you. You can also import a previously exported file; it is read entirely on your device.</p>
+    <p>GLPMGR lets you export your entries as a JSON or CSV file, or as a PDF report, at any time from Settings. This export is generated entirely on your device and handed to iOS's native file-saving screen — no network request is made and no copy is sent to us. Where you send that file afterward (email, Files, AirDrop, a doctor's portal) is entirely up to you. Exports include everything you entered in GLPMGR, including blood glucose readings you typed in. Blood glucose read from Apple Health is never in the JSON or CSV file; it can appear only on the blood glucose page of the PDF report, if you turn blood glucose on and generate a report. You can also import a previously exported file; it is read entirely on your device.</p>
   </section>
 
   <section class="clause" id="no-tracking">
@@ -130,14 +131,14 @@
     <p>We don't share, sell, or rent your data to anyone — there is no data on our servers to share in the first place. The only parties who ever touch your information are:</p>
     <table class="datatable">
       <tr><th>Party</th><th>What they see</th><th>Why</th></tr>
-      <tr><td>Apple (HealthKit)</td><td>Weight/health values you approve</td><td>To sync with the Health app, on-device</td></tr>
+      <tr><td>Apple (HealthKit)</td><td>The weight you log (written to Health), and the nutrition and blood glucose readings you allow GLPMGR to read</td><td>To sync with the Health app, on-device</td></tr>
       <tr><td>Apple (App Store)</td><td>Payment &amp; subscription status</td><td>To process your purchase</td></tr>
     </table>
   </section>
 
   <section class="clause" id="retention">
     <h2 class="clause-title"><span class="num">11</span> Retention &amp; deletion</h2>
-    <p>You control retention directly: delete any entry or photo inside the app at any time. Deleting the GLPMGR app removes its entire local database from your device. A backup of your device that you made earlier may still contain GLPMGR's data; you can remove old device backups in your device settings.</p>
+    <p>You control retention directly: delete any entry or photo inside the app at any time; files you exported earlier are copies that stay where you saved them, so delete those yourself. Deleting the GLPMGR app removes its entire local database from your device. A backup of your device that you made earlier may still contain GLPMGR's data; you can remove old device backups in your device settings.</p>
   </section>
 
   <section class="clause" id="children">
