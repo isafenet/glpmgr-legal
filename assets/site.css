@@ -262,3 +262,13 @@ table.datatable td.num-col{font-variant-numeric:tabular-nums;white-space:nowrap}
 .banners{display:grid;gap:12px;margin-top:30px}
 .banners img{display:block;width:100%;height:auto;filter:drop-shadow(0 10px 18px rgba(0,60,110,.28))}
 @media (max-width:900px){.pairs{grid-template-columns:1fr;gap:56px}.notif{grid-template-columns:1fr}.notif-phones{margin-top:8px}}
+
+/* photographic feature panels ("A closer look") — swipe sideways, each panel snaps into place */
+#highlights{padding-bottom:40px}
+.panels{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+  padding:10px max(20px,calc((100vw - 1160px)/2)) 30px;scrollbar-width:thin}
+.panels img{flex:none;width:270px;height:auto;border-radius:24px;scroll-snap-align:center;
+  box-shadow:0 18px 40px rgba(0,30,50,.22)}
+@media (max-width:600px){.panels img{width:74vw;border-radius:20px}}
+.panel-credit{font-size:.8rem;color:var(--ink-2);text-align:center;margin-top:4px}
+.panel-credit a{color:inherit}
