@@ -60,7 +60,12 @@
 
     <details class="faq">
       <summary>Where is my data stored? Is it backed up?</summary>
-      <p>Everything you log stays on your device — GLPMGR has no servers of its own and never syncs your data to iCloud, so an iPad or Mac keeps its own separate log. If you back up your device (iCloud Backup or a computer backup), that backup is made by iOS and may include GLPMGR's data, which restores on a new device. To back up or move your data yourself, export it from <strong>Settings → Data &amp; Backup</strong> and import the file on the other device. Deleting the app removes its local data.</p>
+      <p>Everything you log stays on your device — GLPMGR has no servers of its own and never syncs your data to iCloud, so an iPad or Mac keeps its own separate log. GLPMGR's data is also excluded from iCloud Backup and from a computer backup, so it does not restore automatically on a new or wiped device. To back up or move your data yourself, export it from <strong>Settings → Data &amp; Backup</strong> — this is a complete copy, including photos, dosing schedules and settings, protected by a password you set when you create it — and import the file on the other device. Deleting the app removes its local data.</p>
+    </details>
+
+    <details class="faq">
+      <summary>I forgot the password on my backup file.</summary>
+      <p>There's no way to recover it — GLPMGR never stores the password anywhere, which is what keeps the file safe if it ends up somewhere else. You'll need to export a new backup with a password you'll remember.</p>
     </details>
 
     <details class="faq">
@@ -69,8 +74,8 @@
     </details>
 
     <details class="faq">
-      <summary>I imported a backup and my photos are missing.</summary>
-      <p>This is expected — photo files themselves aren't included in JSON/CSV exports to keep them small and private, so importing a backup restores your entries but not the images. Keep the original photos safe separately (e.g. in Files or Photos) if you need them back.</p>
+      <summary>I imported an old backup and my photos are missing.</summary>
+      <p>JSON exports made before photos were included in the file (an older version of GLPMGR) restore your entries but not the images — there's nothing in that file to recreate them from. A fresh export always includes your photos.</p>
     </details>
 
     <details class="faq">

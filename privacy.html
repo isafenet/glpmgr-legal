@@ -38,7 +38,7 @@
   <div class="doc-tabs" role="navigation" aria-label="Legal and support pages"><a href="terms.html">Terms of Use</a><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="support.html">Support</a></div>
   <p class="eyebrow">Privacy Policy</p>
   <h1>How GLPMGR handles your data</h1>
-  <p class="meta">Effective September 21, 2026</p>
+  <p class="meta">Effective September 23, 2026</p>
   <div class="lede">
       <strong>In short:</strong> GLPMGR keeps your health data on your device. It is never sent to iCloud or anywhere else. There are no GLPMGR servers, no analytics, and no advertising in this app — full stop.
     </div>
@@ -98,12 +98,12 @@
 
   <section class="clause" id="photos">
     <h2 class="clause-title"><span class="num">4</span> Photos</h2>
-    <p>Progress photos you add are selected through Apple's native photo picker, which does not require GLPMGR to have general access to your photo library — only the specific images you pick. Selected photos are copied into GLPMGR's own app storage and shown to you inside the Journey and Photos views.</p>
+    <p>Progress photos you add are selected through Apple's native photo picker, which does not require GLPMGR to have general access to your photo library — only the specific images you pick. Selected photos are copied into GLPMGR's own app storage, encrypted there with a key held only in your device's Keychain, and shown to you inside the Journey and Photos views.</p>
   </section>
 
   <section class="clause" id="storage">
     <h2 class="clause-title"><span class="num">5</span> Where your data lives</h2>
-    <p>Everything you record is stored locally on your device in a private, sandboxed app database, shared only between the GLPMGR app, its Today/Next Dose widgets and Live Activity, and — if you use the GLPMGR Apple Watch app — your paired Apple Watch. The Watch receives your next dose, medication and recent weights from your iPhone, and can send a weight you log on the Watch back to it; these transfers go directly between your own devices using Apple's WatchConnectivity, never through a server. GLPMGR does not operate any backend servers, and nothing you enter is uploaded anywhere by default. Your data is <strong>never synced to iCloud</strong>, so each device keeps its own separate log; to move your data between devices, export it and import the file on the other one. If you back up your device with iCloud Backup or to a computer, that backup is made by iOS, not by GLPMGR, and may include GLPMGR's data; you control those backups in your device settings.</p>
+    <p>Everything you record is stored locally on your device in a private, sandboxed app database, shared only between the GLPMGR app, its Today/Next Dose widgets and Live Activity, and — if you use the GLPMGR Apple Watch app — your paired Apple Watch. The Watch receives your next dose, medication and recent weights from your iPhone, and can send a weight you log on the Watch back to it; these transfers go directly between your own devices using Apple's WatchConnectivity, never through a server. GLPMGR does not operate any backend servers, and nothing you enter is uploaded anywhere by default. Your data is <strong>never synced to iCloud</strong>, so each device keeps its own separate log, and it is also <strong>excluded from iCloud Backup and from a computer backup</strong> — restoring or migrating a device does not bring GLPMGR's data with it. Exporting a JSON backup from Settings → Data & Backup and importing it on the other device is the only way to move your data or recover it after a lost or wiped device; that export is a complete copy, including your photos, dosing schedules and settings, and stays entirely on-device unless you choose where to save or send the file. You set a password when you create it, and the file is encrypted with a key derived from that password — GLPMGR never stores the password itself, so losing it means the backup can't be recovered, by you or by anyone else.</p>
   </section>
 
   <section class="clause" id="notifications">
@@ -118,7 +118,7 @@
 
   <section class="clause" id="export">
     <h2 class="clause-title"><span class="num">8</span> Exporting your data</h2>
-    <p>GLPMGR lets you export your entries as a JSON or CSV file, or as a PDF report, at any time from Settings. This export is generated entirely on your device and handed to iOS's native file-saving screen — no network request is made and no copy is sent to us. Where you send that file afterward (email, Files, AirDrop, a doctor's portal) is entirely up to you. Exports include everything you entered in GLPMGR, including blood glucose readings you typed in. Blood glucose read from Apple Health is never in the JSON or CSV file; it can appear only on the blood glucose page of the PDF report, if you turn blood glucose on and generate a report. You can also import a previously exported file; it is read entirely on your device.</p>
+    <p>GLPMGR lets you export your entries as a JSON or CSV file, or as a PDF report, at any time from Settings. This export is generated entirely on your device and handed to iOS's native file-saving screen — no network request is made and no copy is sent to us. Where you send that file afterward (email, Files, iCloud Drive, AirDrop, a doctor's portal) is entirely up to you. Only the JSON backup is encrypted, with the password you set; the CSV file and the PDF report are not password-protected, so anyone who can open them can read them. GLPMGR asks you to confirm before making a CSV file, and lets you leave your notes out of it. Exports include everything you entered in GLPMGR, including blood glucose readings you typed in. Blood glucose read from Apple Health is never in the JSON or CSV file; it can appear only on the blood glucose page of the PDF report, if you turn blood glucose on and generate a report. You can also import a previously exported file; it is read entirely on your device.</p>
   </section>
 
   <section class="clause" id="no-tracking">
