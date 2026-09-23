@@ -272,3 +272,17 @@ table.datatable td.num-col{font-variant-numeric:tabular-nums;white-space:nowrap}
 @media (max-width:600px){.panels img{width:74vw;border-radius:20px}}
 .panel-credit{font-size:.8rem;color:var(--ink-2);text-align:center;margin-top:4px}
 .panel-credit a{color:inherit}
+.glossary{margin:8px 0 0}
+.glossary dt{margin-top:18px;font-size:1.05rem}
+.glossary dt .muted{font-weight:400;font-style:italic;color:var(--ink-2)}
+.glossary dd{margin:4px 0 0;color:var(--ink-2);line-height:1.6}
+.guide-toc ol{columns:2;column-gap:32px;margin:14px 0 0;padding-left:1.3em;line-height:1.9}
+@media (max-width:600px){.guide-toc ol{columns:1}}
+.guide-row{display:grid;grid-template-columns:1fr 240px;gap:36px;align-items:start}
+.guide-row .guide-art .phone{max-width:240px}
+.guide-row .guide-art .watch{max-width:180px;margin:0 auto}
+.guide-row .guide-art .watch img{width:100%;height:auto;border-radius:34px;border:8px solid #1c1e22}
+.guide-text ol,.guide-text ul{padding-left:1.3em}
+.guide-text li{margin:6px 0}
+.guide-top{font-size:.85rem;margin-top:18px}
+@media (max-width:760px){.guide-row{grid-template-columns:1fr}.guide-row .guide-art{max-width:240px;margin:0 auto}}
