@@ -316,7 +316,8 @@ footer .wrap{display:grid;gap:10px}
   <div class="wrap">
     <article class="new18">
       <div class="copy">
-        <span class="badge-event"><i aria-hidden="true"></i>App Store event · 15 Oct – 14 Nov</span>
+        <!--event--><span class="badge-event" data-until="2026-11-15"><i aria-hidden="true"></i>App Store event · 15 Oct – 14 Nov</span>
+        <script>(function(e){if(Date.now()>=Date.parse(e.dataset.until))e.remove()})(document.currentScript.previousElementSibling)</script><!--/event-->
         <p class="eyebrow">New in GLPMGR 1.8</p>
         <h2>Your new daily check-in.</h2>
         <p>Appetite, energy, sleep and bowel movements in a few taps from Today. Then see your answers week by week in Symptom Trends.</p>
