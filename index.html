@@ -23,195 +23,465 @@
 <meta name="twitter:title" content="GLPMGR: GLP-1 Tracker App for iPhone, iPad &amp; Apple Watch">
 <meta name="twitter:description" content="A free, private GLP-1 tracker app: doses, titration, weight, symptoms and injection sites for semaglutide, tirzepatide and more. No account, no ads.">
 <meta name="twitter:image" content="https://glpmgr.isafenet.app/assets/og.png">
-<link rel="preload" href="assets/fonts/pjs-800.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css">
-<script>document.documentElement.classList.add("js")</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GLPMGR","alternateName":"GLPMGR GLP-1 Tracker","url":"https://glpmgr.isafenet.app/","image":"https://glpmgr.isafenet.app/assets/icon-512.png","inLanguage":"en-GB","applicationCategory":"HealthApplication","operatingSystem":"iOS, iPadOS, watchOS","description":"A private GLP-1 tracker for iPhone, iPad and Apple Watch: doses, titration, weight, symptoms and injection sites for semaglutide, tirzepatide and other GLP-1 medicines. No account, no ads, and your data stays on your device.","featureList":["Dose tracking with dose steps (titration)","Injection body map with the areas each manufacturer lists","Dosing reminders and low-supply alerts","Weight, goals and Apple Health sync (optional)","Symptom diary","Estimated medication level chart","Apple Watch app, widgets and Live Activities","PDF report, spreadsheet (CSV) export and password-protected backup","Private by design: no account, no ads, no analytics"],"screenshot":["https://glpmgr.isafenet.app/assets/shots/today.webp","https://glpmgr.isafenet.app/assets/shots/trends.webp","https://glpmgr.isafenet.app/assets/shots/bodymap.webp","https://glpmgr.isafenet.app/assets/shots/sites.webp","https://glpmgr.isafenet.app/assets/shots/titration.webp"],"installUrl":"https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972","downloadUrl":"https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972","publisher":{"@type":"Organization","@id":"https://isafenet.app/#organization","name":"iSafeNet","url":"https://isafenet.app/"},"offers":[{"@type":"Offer","price":"0","priceCurrency":"GBP","name":"Free"},{"@type":"Offer","price":"4.99","priceCurrency":"GBP","name":"Premium Monthly"},{"@type":"Offer","price":"24.99","priceCurrency":"GBP","name":"Premium Yearly"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GLPMGR","alternateName":"GLPMGR GLP-1 Tracker","url":"https://glpmgr.isafenet.app/","image":"https://glpmgr.isafenet.app/assets/icon-512.png","inLanguage":"en-GB","applicationCategory":"HealthApplication","operatingSystem":"iOS, iPadOS, watchOS","description":"A private GLP-1 tracker for iPhone, iPad and Apple Watch: doses, titration, weight, symptoms and injection sites for semaglutide, tirzepatide and other GLP-1 medicines. No account, no ads, and your data stays on your device.","featureList":["Dose tracking with dose steps (titration)","Injection body map with the areas each manufacturer lists","Dosing reminders and low-supply alerts","Weight, goals and Apple Health sync (optional)","Symptom diary","Estimated medication level chart","Apple Watch app, widgets and Live Activities","PDF report, spreadsheet (CSV) export and password-protected backups, made automatically if you like","Private by design: no account, no ads, no analytics"],"screenshot":["https://glpmgr.isafenet.app/assets/shots/today.webp","https://glpmgr.isafenet.app/assets/shots/trends.webp","https://glpmgr.isafenet.app/assets/shots/bodymap.webp","https://glpmgr.isafenet.app/assets/shots/sites.webp","https://glpmgr.isafenet.app/assets/shots/titration.webp"],"installUrl":"https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972","downloadUrl":"https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972","publisher":{"@type":"Organization","@id":"https://isafenet.app/#organization","name":"iSafeNet","url":"https://isafenet.app/"},"offers":[{"@type":"Offer","price":"0","priceCurrency":"GBP","name":"Free"},{"@type":"Offer","price":"4.99","priceCurrency":"GBP","name":"Premium Monthly"},{"@type":"Offer","price":"24.99","priceCurrency":"GBP","name":"Premium Yearly"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"GLPMGR","url":"https://glpmgr.isafenet.app/","inLanguage":"en-GB"}</script>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/v18/atkinson-hyperlegible-italic-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/v18/atkinson-hyperlegible-italic-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/v18/atkinson-hyperlegible-normal-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/v18/atkinson-hyperlegible-normal-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/v18/atkinson-hyperlegible-normal-700-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/v18/atkinson-hyperlegible-normal-700-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 500 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(assets/v18/bricolage-grotesque-normal-500-800-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 500 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(assets/v18/bricolage-grotesque-normal-500-800-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* Layout: a misty full-bleed opener, then calm alternating rows of real screens; one bold moment, the 1.8 check-in band. */
+:root{
+  --mist:#EEF3F1; --paper:#FFFFFF; --ink:#13211D; --ink-soft:#4C5D57; --line:#D3DDD9;
+  --spruce:#0C6E5E; --spruce-ink:#0A5A4D; --tide:#1D5FA6; --dawn:#F2C14E; --on-accent:#FFFFFF;
+  --hero-ink:#FFFFFF; --hero-scrim:rgba(8,20,17,.62);
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body:"Atkinson Hyperlegible", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --radius:22px; --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --mist:#0B1513; --paper:#12201C; --ink:#E7EFEC; --ink-soft:#A4B5AF; --line:#24352F;
+  --spruce:#3FBFA6; --spruce-ink:#7FD9C7; --tide:#7FB2EE; --dawn:#F2C14E; --on-accent:#06231D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --mist:#0B1513; --paper:#12201C; --ink:#E7EFEC; --ink-soft:#A4B5AF; --line:#24352F;
+  --spruce:#3FBFA6; --spruce-ink:#7FD9C7; --tide:#7FB2EE; --dawn:#F2C14E; --on-accent:#06231D; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--mist);color:var(--ink);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--spruce-ink)}
+:focus-visible{outline:3px solid var(--dawn);outline-offset:3px;border-radius:8px}
+h1,h2,h3{font-family:var(--display);line-height:1.08;text-wrap:balance;margin:0;letter-spacing:-.015em}
+h2{font-size:clamp(1.9rem,4.2vw,3rem);font-weight:800}
+h3{font-size:1.3rem;font-weight:700}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:20px}
+.eyebrow{font:700 .78rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--spruce-ink)}
+.lede{color:var(--ink-soft);font-size:1.15rem;max-width:58ch}
+section{padding-block:clamp(56px,9vw,112px)}
+
+/* nav */
+.nav{position:absolute;inset-inline:0;top:0;z-index:5;padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{display:flex;align-items:center;gap:20px;padding-block:18px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:800 1.15rem var(--display)}
+.brand img{width:36px;height:36px;border-radius:9px}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0 0 0 auto;padding:0}
+.nav ul a{color:rgba(255,255,255,.88);text-decoration:none;font-size:.95rem}
+.nav ul a:hover{color:#fff}
+@media (max-width:760px){.nav ul{display:none}}
+
+/* app store button */
+.store{display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;text-decoration:none;border-radius:14px;padding:11px 18px 11px 14px;border:1px solid rgba(255,255,255,.25)}
+.store svg{width:26px;height:26px;fill:#fff}
+.store small{display:block;font-size:.68rem;line-height:1;opacity:.85}
+.store b{display:block;font:700 1.12rem/1.1 var(--display)}
+
+/* hero */
+.hero{position:relative;color:var(--hero-ink);overflow:hidden;padding-block:clamp(110px,14vw,150px) 0}
+.hero-bg{position:absolute;inset:0;background:url(assets/v18/hero.webp) center 35%/cover}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,17,.55) 0%,var(--hero-scrim) 45%,var(--mist) 100%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.9rem);font-weight:800;letter-spacing:-.03em}
+.hero .lede{color:rgba(255,255,255,.9);margin-top:18px}
+.hero-copy{padding-bottom:clamp(40px,8vw,110px);display:grid;gap:0;min-width:0}
+.hero .eyebrow{color:var(--dawn);margin-bottom:16px}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:30px}
+.cta-note{font-size:.9rem;color:rgba(255,255,255,.85)}
+.phone{position:relative;justify-self:center;width:min(330px,80vw)}
+.phone .frame{border-radius:46px;padding:10px;background:#0c0f0e;box-shadow:0 40px 80px -30px rgba(0,0,0,.6),inset 0 0 0 2px #2a2f2d}
+.phone .frame img{border-radius:37px}
+.chip{position:absolute;display:flex;align-items:center;gap:10px;background:var(--paper);color:var(--ink);border-radius:16px;padding:10px 14px;box-shadow:0 18px 40px -18px rgba(0,0,0,.45);font-size:.88rem;white-space:nowrap}
+.chip b{font-family:var(--display);font-size:1.05rem}
+.chip .ring{width:34px;height:34px;border-radius:50%;background:conic-gradient(var(--spruce) 0 78%,var(--line) 0);display:grid;place-items:center}
+.chip .ring::after{content:"";width:24px;height:24px;border-radius:50%;background:var(--paper)}
+.chip.a{left:-22%;top:26%}
+.chip.b{right:-16%;top:56%}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero-copy{padding-bottom:30px}.chip.a{left:-6%}.chip.b{right:-6%}}
+@media (max-width:420px){.chip{font-size:.78rem;padding:8px 10px}.chip.a{left:-2%;top:18%}.chip.b{right:-2%}}
+
+/* proof strip */
+.proof{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;padding-block:26px;color:var(--ink-soft);font-size:.95rem}
+.proof span{display:flex;align-items:center;gap:8px}
+.proof svg{width:18px;height:18px;stroke:var(--spruce);fill:none;stroke-width:2.2}
+
+/* 1.8 band */
+.new18{background:linear-gradient(135deg,#0B4E44,#0D3B5E);color:#fff;border-radius:32px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+.new18 .copy{padding:clamp(28px,5vw,56px);display:grid;gap:16px;align-content:center;min-width:0}
+.new18 .eyebrow{color:var(--dawn)}
+.new18 h2{color:#fff}
+.new18 p{color:rgba(255,255,255,.88)}
+.badge-event{display:inline-flex;gap:8px;align-items:center;justify-self:start;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 14px;font-size:.88rem}
+.badge-event i{width:8px;height:8px;border-radius:50%;background:var(--dawn);display:block}
+.checks{list-style:none;padding:0;margin:6px 0 0;display:grid;gap:10px}
+.checks li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
+.checks svg{width:20px;height:20px;stroke:var(--dawn);fill:none;stroke-width:2.6;margin-top:3px}
+.new18 .art{position:relative;min-height:320px;background:url(assets/v18/checkin-photo.webp) center/cover}
+.new18 .art img{position:absolute;right:8%;bottom:-6%;width:52%;max-width:240px;border-radius:30px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);border:8px solid #0c0f0e}
+@media (max-width:820px){.new18{grid-template-columns:1fr}.new18 .art{min-height:360px}}
+
+/* feature rows */
+.rows{display:grid;gap:clamp(56px,9vw,104px)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,72px);align-items:center}
+.row:nth-child(even) .shot{order:-1}
+.row .copy{display:grid;gap:14px;min-width:0}
+.shot{justify-self:center;width:min(300px,78vw)}
+.shot img{border-radius:34px;border:9px solid #0c0f0e;box-shadow:0 30px 60px -28px rgba(10,30,25,.55)}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.facts span{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.88rem;color:var(--ink-soft)}
+@media (max-width:820px){.row{grid-template-columns:1fr}.row .shot{order:-1}}
+
+/* gallery */
+.gallery{display:grid;grid-auto-flow:column;grid-auto-columns:min(240px,62vw);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 18px;margin-inline:auto;max-width:var(--wrap);scrollbar-width:thin}
+.gallery img{border-radius:20px;scroll-snap-align:start;box-shadow:0 14px 30px -18px rgba(0,0,0,.4)}
+.section-head{display:grid;gap:12px;margin-bottom:34px;max-width:720px}
+
+/* medicines */
+.meds{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
+.med{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:grid;gap:4px}
+.med b{font-family:var(--display);font-size:1.12rem}
+.med span{color:var(--ink-soft);font-size:.95rem}
+.med a{color:var(--spruce-ink)}
+
+/* privacy */
+.privacy{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.privacy .big{font:800 clamp(2.2rem,5.5vw,3.8rem)/1.02 var(--display);letter-spacing:-.03em}
+.privacy .big em{font-style:normal;color:var(--spruce-ink)}
+.points{display:grid;gap:18px}
+.points div{display:grid;gap:4px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:820px){.privacy{grid-template-columns:1fr}}
+
+/* devices */
+.devices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.device{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:grid;gap:12px;align-content:start;min-width:0}
+.device .pic{display:grid;place-items:center;min-height:220px;background:var(--mist);border-radius:16px}
+.device .pic img{max-height:200px;width:auto}
+@media (max-width:820px){.devices{grid-template-columns:1fr}}
+
+/* pricing */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:900px}
+.plan{background:var(--paper);border:1px solid var(--line);border-radius:26px;padding:28px;display:grid;gap:14px;align-content:start}
+.plan.premium{border:2px solid var(--spruce)}
+.price{font:800 2.4rem/1 var(--display)}
+.price small{font:400 1rem var(--body);color:var(--ink-soft)}
+.plan ul{margin:0;padding-left:1.1em;display:grid;gap:6px;color:var(--ink-soft)}
+@media (max-width:720px){.plans{grid-template-columns:1fr}}
+
+/* faq */
+.faq{max-width:820px;display:grid;gap:10px}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:4px 20px}
+.faq summary{cursor:pointer;font:700 1.08rem var(--display);padding-block:14px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--spruce-ink)}
+.faq details[open] summary::after{content:"–"}
+.faq p{padding-bottom:16px;color:var(--ink-soft)}
+
+/* final cta */
+.final{position:relative;border-radius:32px;overflow:hidden;color:#fff;text-align:left;padding:clamp(36px,7vw,80px)}
+.final::before{content:"";position:absolute;inset:0;background:url(assets/v18/sites-photo.webp) center/cover}
+.final::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,30,26,.88),rgba(8,30,26,.35))}
+.final>*{position:relative;z-index:1}
+.final h2{color:#fff;max-width:16ch}
+.final p{margin-top:12px;max-width:46ch;color:rgba(255,255,255,.9)}
+
+footer{padding-block:40px 60px;color:var(--ink-soft);font-size:.88rem}
+footer a{color:inherit}
+footer .wrap{display:grid;gap:10px}
+@media (prefers-reduced-motion:no-preference){
+  .phone .frame{animation:float 7s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-8px)}}
+}
+</style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="nav"><div class="wrap">
-  <a class="brand" href="#top"><img src="assets/icon-192.png" width="36" height="36" alt="">GLPMGR</a>
-  <nav class="nav-links" aria-label="Main"><a href="#features">Features</a><a href="#screens">Screens</a><a href="#privacy">Privacy</a><a href="#pricing">Pricing</a><a href="faq.html">FAQ</a><a href="guide.html">Guide</a><a href="support.html">Support</a><a class="btn sm" href="https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972">Get the app</a></nav>
-</div></header>
 
-<main id="main">
-<div id="top"></div>
-<section class="hero"><div class="wrap">
-  <div>
-    <a class="pill" href="glpmgr-1-8.html" style="text-decoration:none;margin-bottom:10px"><i></i> <b>Sneak peek:</b>&nbsp;GLPMGR 1.8 is nearly here <span aria-hidden="true">&rarr;</span></a><br>
-    <span class="pill"><i></i> Private GLP-1 tracker app for iPhone, iPad &amp; Apple Watch</span>
-    <h1>Your <span class="nb">GLP-1</span> tracker, <span class="grad-text">private by design.</span></h1>
-    <p class="lead">A calm, simple way to keep track of your doses, dose steps, weight, side effects and injection sites, for Mounjaro, Wegovy, Ozempic and other GLP-1 medicines. On iPhone, iPad and Apple Watch, with everything kept on your device.</p>
-    <div class="cta-row"><a class="btn " href="https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg> Download on the App Store</a><a class="btn ghost" href="#features">Explore features</a></div>
-    <ul class="trust">
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="3"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> No account needed</li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><path d="m2 2 20 20"/><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/></svg> No ads or analytics</li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg> Data stays on your device</li>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/icon-192.png" alt="">GLPMGR</a>
+    <ul>
+      <li><a href="#new">New in 1.8</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#medicines">Medicines</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="guide.html">Guide</a></li>
     </ul>
   </div>
-  <div class="hero-art" aria-hidden="false">
-    <div class="phone p1"><img src="assets/shots/today.webp" width="600" height="1304" alt="GLPMGR Today screen showing next dose, weight and last injection site" decoding="async"></div>
-    <div class="phone p2"><img src="assets/shots/today-dark.webp" width="600" height="1304" alt="GLPMGR Today screen in dark mode" decoding="async"></div>
-  </div>
-</div></section>
+</nav>
 
-<section id="highlights"><div class="wrap">
-  <div class="sec-head center rv" style="text-align:center"><span class="eyebrow">A closer look</span>
-    <h2>Built around your GLP-1 routine.</h2>
-    <p>Doses and dose steps, weight and daily habits, and your progress photos kept private. Swipe through.</p></div></div>
-  <div class="panels" role="group" aria-label="GLPMGR features"><img src="assets/panels/01-at-a-glance.webp" width="660" height="1434" alt="Your GLP-1 journey at a glance: next dose, goal, water and protein on the Today screen" loading="lazy" decoding="async"><img src="assets/panels/02-trends.webp" width="660" height="1434" alt="Weight trends over time with every dose marked" loading="lazy" decoding="async"><img src="assets/panels/03-daily-habits.webp" width="660" height="1434" alt="Daily protein totals against your goal" loading="lazy" decoding="async"><img src="assets/panels/04-scan-a-label.webp" width="660" height="1434" alt="Scanning a food label for its protein figure" loading="lazy" decoding="async"><img src="assets/panels/05-private-photos.webp" width="660" height="1434" alt="Progress photos locked behind Face ID" loading="lazy" decoding="async"><img src="assets/panels/06-titration.webp" width="660" height="1434" alt="A titration ladder in the dosing schedule" loading="lazy" decoding="async"><img src="assets/panels/07-injection-areas.webp" width="660" height="1434" alt="The injection body map with the areas your medicine lists" loading="lazy" decoding="async"><img src="assets/panels/08-reminders.webp" width="660" height="1434" alt="A dose reminder on the lock screen" loading="lazy" decoding="async"><img src="assets/panels/09-on-your-wrist.webp" width="660" height="1434" alt="GLPMGR on Apple Watch: the next dose, a weight trend and logging weight" loading="lazy" decoding="async"></div>
-  <div class="wrap"><p class="panel-credit">Background photos from <a href="https://unsplash.com" rel="noopener">Unsplash</a>: Fabrice Villard, Jack B, Kristaps Ungurs, Maximilian Wernisch, Melissa Walker Horn, Nejc Soklič, Samuel Girven, shraga kopstein, Taylor Kiser.</p></div>
+<header class="hero" id="top">
+  <div class="hero-bg" role="img" aria-label="Mist over green hills at dawn"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">GLP-1 tracker · iPhone, iPad &amp; Apple Watch</p>
+      <h1>Your GLP-1 journey, at a glance.</h1>
+      <p class="lede">Doses and dose steps, weight, symptoms, injection sites and a new daily check-in, in one calm app that keeps everything on your devices.</p>
+      <div class="cta-row">
+        <a class="store" href="https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.28-.88-2.3-3.48zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.22z"/></svg>
+          <span><small>Download on the</small><b>App Store</b></span>
+        </a>
+        <span class="cta-note">Free · No account · No ads</span>
+      </div>
+    </div>
+    <div class="phone">
+      <div class="frame"><img src="assets/v18/today.webp" alt="GLPMGR's Today screen: next dose in 6 days 17 hours, goal 78% with 8.5 lb to go, water and protein rings" width="640" height="1391"></div>
+      <div class="chip a"><span class="ring" aria-hidden="true"></span><span><b>8.5 lb</b> to go</span></div>
+      <div class="chip b"><span>Dose step <b>5 of 5</b></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <p class="proof" aria-label="Highlights">
+    <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>No account, no servers</span>
+    <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Every GLP-1 medicine, injection or tablet</span>
+    <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>A report for your doctor or nurse</span>
+    <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Built for VoiceOver</span>
+  </p>
+</div>
+
+<section id="new">
+  <div class="wrap">
+    <article class="new18">
+      <div class="copy">
+        <span class="badge-event"><i aria-hidden="true"></i>App Store event · 15 Oct – 14 Nov</span>
+        <p class="eyebrow">New in GLPMGR 1.8</p>
+        <h2>Your new daily check-in.</h2>
+        <p>Appetite, energy, sleep and bowel movements in a few taps from Today. Then see your answers week by week in Symptom Trends.</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Audio Graphs.</b> VoiceOver users can play weight, water, protein, medication level and glucose charts as sound.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Your smart scale.</b> Weight, body fat and lean mass from Apple Health, never added twice.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Automatic backups.</b> Password-locked, daily or weekly, to a folder you choose.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Clearer trends.</b> Your usual weight, weekly averages and your weight at every dose step.</span></li>
+        </ul>
+      </div>
+      <div class="art" role="img" aria-label="A morning cup of tea beside a window">
+        <img src="assets/v18/panel-10.webp" alt="The daily check-in screen" loading="lazy">
+      </div>
+    </article>
+  </div>
 </section>
 
-<section id="features"><div class="wrap">
-  <div class="sec-head rv"><span class="eyebrow">Features</span>
-    <h2>Everything for your routine. Nothing you don’t need.</h2>
-    <p>GLPMGR is built around how people actually take GLP-1 medicine: remembering when it&rsquo;s due, stepping up doses, where you inject and how you&rsquo;re feeling. New to some of the words? <a href="glossary.html">We explain them in plain English</a>.</p></div>
-  <div class="features"><article class="card f-a rv"><div class="feature-lg"><div><div class="ico" style="--c:linear-gradient(135deg,#0f8c78,#0a8fa0)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h4v-5h4v-5h4V6h6"/><path d="m18 3 3 3-3 3"/></svg></div><h3>Doses &amp; dose steps</h3><p>Log every injection or tablet in seconds. Most GLP-1 medicines start low and step up over a few weeks (doctors call this titration). Enter the steps your prescriber gave you and GLPMGR fills in the right dose each time, up to the dose you&rsquo;ll stay on.</p></div><div class="mini"><div class="phone "><img src="assets/shots/titration.webp" width="600" height="1304" alt="Dose steps editor" loading="lazy" decoding="async"></div></div></div></article><article class="card f-b rv"><div class="feature-lg"><div><div class="ico" style="--c:linear-gradient(135deg,#0a8fa0,#006cc4)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg></div><h3>Injection areas from your medicine&rsquo;s instructions</h3><p>GLPMGR only offers the injection areas your medicine&rsquo;s manufacturer lists for your region, and shows where you have injected on a body map. If we don&rsquo;t hold a verified list for a medicine, it doesn&rsquo;t offer a site. This is not medical advice: talk to your doctor, pharmacist or nurse about where and how to inject. <a href="site-guidance.html">See where the guidance comes from</a>.</p></div><div class="mini"><div class="phone "><img src="assets/shots/bodymap.webp" width="600" height="1304" alt="Injection body map" loading="lazy" decoding="async"></div></div></div></article><article class="card f-c rv"><div><div class="ico" style="--c:#f59a3c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div><h3>Reminders &amp; supply alerts</h3><p>Get reminded before each dose is due, plus a heads-up when your pen, vial or prescription is running low.</p></div></article><article class="card f-c rv"><div><div class="ico" style="--c:#0fb5c9"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M8 9.5a5 5 0 0 1 8 0"/><path d="m12 13 2-3"/></svg></div><h3>Weight, goals &amp; Apple Health</h3><p>Log weight in kilograms, pounds or stones, and set a goal if you&rsquo;d like one. Every body responds in its own way and at its own pace, so progress is shown gently, with no labels on your numbers. Apple Health is off until you turn it on.</p></div></article><article class="card f-c rv"><div><div class="ico" style="--c:#34c759"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg></div><h3>A symptom diary that helps</h3><p>Side effects like nausea or tiredness are common, and never something you&rsquo;re doing wrong. Note how you feel in a couple of taps and see when it tends to happen after a dose, ready to talk through with your doctor or nurse.</p></div></article><article class="card f-c rv"><div><div class="ico" style="--c:#0f8c78"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div><h3>Estimated medication level</h3><p>A gentle chart of roughly how much medicine may be in your body between doses, worked out from the doses you log and how long the medicine usually lasts. An estimate for context, not a blood test.</p></div></article><article class="card f-c rv"><div><div class="ico" style="--c:#2d7bd6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></div><h3>Photos &amp; measurements</h3><p>Keep body measurements and progress photos alongside your weight if you want to. Photos stay on your device, locked behind Face ID, Touch ID or your passcode.</p></div></article><article class="card f-c rv"><div><div class="ico" style="--c:#006cc4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg></div><h3>Share with your doctor or nurse</h3><p>Create a tidy PDF report to take to appointments, or a spreadsheet of your entries. A password-protected backup lets you move to a new device. Every file is made on your device.</p></div></article></div>
-</div></section>
-
-<section id="medicines"><div class="wrap">
-  <div class="sec-head rv"><span class="eyebrow">Your medicine</span>
-    <h2>A GLP-1 tracker for the medicine you take.</h2>
-    <p>Choose your medicine when you log a dose. For each one below you can see exactly where its manufacturer says it can be injected. Taking a tablet? See the <a href="glp-1-pill-tracker.html">GLP-1 pill tracker</a>.</p></div>
-  <div class="features"><article class="card f-c rv"><div><div class="ico" style="--c:linear-gradient(135deg,#0f8c78,#0a8fa0)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg></div><h3>Semaglutide</h3><p>Ozempic and Wegovy as injections, and Rybelsus as a tablet. <a href="ozempic-injection-sites.html">Ozempic injection sites</a>, <a href="wegovy-injection-sites.html">Wegovy injection sites</a>.</p></div></article><article class="card f-c rv"><div><div class="ico" style="--c:linear-gradient(135deg,#0a8fa0,#006cc4)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg></div><h3>Tirzepatide</h3><p>Mounjaro and Zepbound. <a href="mounjaro-injection-sites.html">Mounjaro injection sites</a>, <a href="zepbound-injection-sites.html">Zepbound injection sites</a>.</p></div></article><article class="card f-c rv"><div><div class="ico" style="--c:#2d7bd6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg></div><h3>Liraglutide</h3><p>Saxenda and Victoza. <a href="saxenda-injection-sites.html">Saxenda injection sites</a>, <a href="victoza-injection-sites.html">Victoza injection sites</a>.</p></div></article><article class="card f-c rv"><div><div class="ico" style="--c:#0fb5c9"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg></div><h3>Dulaglutide</h3><p>Trulicity. <a href="trulicity-injection-sites.html">Trulicity injection sites</a>.</p></div></article><article class="card f-c rv"><div><div class="ico" style="--c:#34c759"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg></div><h3>Exenatide</h3><p>Byetta and Bydureon. <a href="byetta-injection-sites.html">Byetta injection sites</a>, <a href="bydureon-bcise-injection-sites.html">Bydureon injection sites</a>.</p></div></article><article class="card f-c rv"><div><div class="ico" style="--c:#f59a3c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Any other medicine</h3><p>Type in any medicine by name. Unless GLPMGR holds a verified manufacturer list for it, it offers no injection sites and never suggests where to inject.</p></div></article></div>
-</div></section>
-
-<section id="screens" class="showcase"><div>
-  <div class="wrap"><div class="sec-head rv"><span class="eyebrow">Screens</span>
-    <h2>Calm, clear and quick to use.</h2>
-    <p>Large, readable cards, quick logging and no clutter. It follows your iPhone’s light and dark appearance.</p></div></div>
-  <div class="rail-wrap"><div class="rail" tabindex="0" role="group" aria-label="App screenshots"><figure class="slide"><div class="phone "><img src="assets/shots/today.webp" width="600" height="1304" alt="Today: at-a-glance dashboard with goal progress and water and protein dials" loading="lazy" decoding="async"></div><figcaption><b>Today</b><span>Next dose, goal, water and protein at a glance.</span></figcaption></figure><figure class="slide"><div class="phone "><img src="assets/shots/trends.webp" width="600" height="1304" alt="Weight Trends page with a chart of weight and injections" loading="lazy" decoding="async"></div><figcaption><b>Trends</b><span>Weight over time with every dose marked, month by month.</span></figcaption></figure><figure class="slide"><div class="phone "><img src="assets/shots/log.webp" width="600" height="1304" alt="Quick-add menu for injections, weight, symptoms, measurements and photos" loading="lazy" decoding="async"></div><figcaption><b>Quick log</b><span>Injections, weight, symptoms and photos in a couple of taps.</span></figcaption></figure><figure class="slide"><div class="phone "><img src="assets/shots/titration.webp" width="600" height="1304" alt="Dose steps (titration) in the schedule editor" loading="lazy" decoding="async"></div><figcaption><b>Dose steps</b><span>Enter the dose steps your prescriber gave you.</span></figcaption></figure><figure class="slide"><div class="phone "><img src="assets/shots/sites.webp" width="600" height="1304" alt="Log Injection form with the injection areas the manufacturer lists" loading="lazy" decoding="async"></div><figcaption><b>Injection sites</b><span>Pick from the areas your medicine lists.</span></figcaption></figure><figure class="slide"><div class="phone "><img src="assets/shots/bodymap.webp" width="600" height="1304" alt="Injection body map with the areas the manufacturer lists and where you have injected shaded" loading="lazy" decoding="async"></div><figcaption><b>Body map</b><span>See where you have injected, on the areas it lists.</span></figcaption></figure><figure class="slide"><div class="phone "><img src="assets/shots/symptoms.webp" width="600" height="1304" alt="Symptom diary with severity chips" loading="lazy" decoding="async"></div><figcaption><b>Symptoms</b><span>How you felt, when, and any notes, in one diary.</span></figcaption></figure><figure class="slide"><div class="phone "><img src="assets/shots/maintenance.webp" width="600" height="1304" alt="Maintenance card showing your recent average next to your chosen range" loading="lazy" decoding="async"></div><figcaption><b>Maintenance</b><span>Your recent average next to a range you choose.</span></figcaption></figure><figure class="slide"><div class="phone "><img src="assets/shots/settings-dark.webp" width="600" height="1304" alt="Settings in dark mode with Apple Health switched off" loading="lazy" decoding="async"></div><figcaption><b>Settings</b><span>Apple Health is opt-in.</span></figcaption></figure></div>
-  <div class="rail-btns"><button id="rail-prev" aria-label="Previous screenshots"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><button id="rail-next" aria-label="Next screenshots"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div></div>
-</div></section>
-
-<section id="appearance"><div class="wrap">
-  <div class="sec-head center rv" style="text-align:center"><span class="eyebrow">Light &amp; dark</span>
-    <h2>Made for day and night.</h2>
-    <p>GLPMGR follows your iPhone’s appearance, or you can choose Light or Dark in Settings. Every screen looks right either way.</p></div>
-  <div class="pairs rv">
-    <figure class="pair"><span class="mode">Light</span><span class="mode">Dark</span>
-      <div class="phone "><img src="assets/shots/trends.webp" width="600" height="1304" alt="Weight Trends page in light mode" loading="lazy" decoding="async"></div><div class="phone "><img src="assets/shots/trends-dark.webp" width="600" height="1304" alt="Weight Trends page in dark mode" loading="lazy" decoding="async"></div>
-      <figcaption>Trends</figcaption></figure>
-    <figure class="pair"><span class="mode">Light</span><span class="mode">Dark</span>
-      <div class="phone "><img src="assets/shots/symptoms.webp" width="600" height="1304" alt="Symptoms screen in light mode" loading="lazy" decoding="async"></div><div class="phone "><img src="assets/shots/symptoms-dark.webp" width="600" height="1304" alt="Symptoms screen in dark mode" loading="lazy" decoding="async"></div>
-      <figcaption>Symptoms</figcaption></figure>
-  </div>
-</div></section>
-
-<section id="reminders"><div class="wrap notif">
-  <div class="rv">
-    <span class="eyebrow">Reminders</span>
-    <h2 style="font-size:clamp(2rem,4vw,2.9rem);margin:14px 0 16px">Gentle nudges, only when you ask.</h2>
-    <p class="muted" style="color:var(--ink-2)">GLPMGR asks before it sends a single notification, and everything is scheduled on your device using iOS’s own local notifications. Nothing is sent from a server.</p>
-    <ul class="checklist">
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Dose reminders</b> when your next dose is due.</span></li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Low-supply alerts</b> when your pen, vial or prescription is running low, so you have time to reorder.</span></li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>An optional weekly weigh-in reminder</b> at the day and time you pick. It never mentions your weight.</span></li>
-    </ul>
-    <div class="banners">
-      <img src="assets/shots/banner-dose.webp" width="900" height="136" alt="Notification banner reading Dose due: Semaglutide, 2.4 mg is due now" loading="lazy">
-      <img src="assets/shots/banner-low.webp" width="900" height="136" alt="Notification banner reading Low supply: Semaglutide, 1 dose left, time to reorder" loading="lazy">
-      <img src="assets/shots/banner-weigh.webp" width="900" height="136" alt="Notification banner reading Weekly weigh-in, a good moment to log your weight in GLPMGR" loading="lazy">
+<section id="features" style="padding-top:0">
+  <div class="wrap rows">
+    <div class="row">
+      <div class="copy">
+        <p class="eyebrow">Doses and dose steps</p>
+        <h2>Know exactly where you are.</h2>
+        <p class="lede">Log a dose in seconds. GLPMGR counts down to the next one, shows which dose step you're on and when the next step is due, and keeps every dose you've logged at each.</p>
+        <div class="facts"><span>Countdown to the hour</span><span>Injections and tablets</span><span>Every dose at every step</span></div>
+      </div>
+      <div class="shot"><img src="assets/v18/titration.webp" alt="Dose steps screen showing five tirzepatide steps" loading="lazy" width="640" height="1391"></div>
+    </div>
+    <div class="row">
+      <div class="copy">
+        <p class="eyebrow">Injection sites</p>
+        <h2>Rotate sites the way your leaflet says.</h2>
+        <p class="lede">A body map of the areas your medicine's manufacturer allows, with your recent sites marked, so you can move on with confidence. In the UK, from each leaflet as published by the MHRA.</p>
+        <div class="facts"><span>Abdomen, thighs, upper arms</span><span>Last site at a glance</span></div>
+      </div>
+      <div class="shot"><img src="assets/v18/bodymap.webp" alt="Injection site body map" loading="lazy" width="640" height="1391"></div>
+    </div>
+    <div class="row">
+      <div class="copy">
+        <p class="eyebrow">Weight and trends</p>
+        <h2>See the trend, not the daily noise.</h2>
+        <p class="lede">A smoothed line of your usual weight, weekly averages and the doses that went with them. Pounds, kilograms or stones, and your smart scale if you have one.</p>
+        <div class="facts"><span>Moving average</span><span>Weight at each dose step</span><span>Audio Graphs</span></div>
+      </div>
+      <div class="shot"><img src="assets/v18/trends.webp" alt="Weight trends chart" loading="lazy" width="640" height="1391"></div>
+    </div>
+    <div class="row">
+      <div class="copy">
+        <p class="eyebrow">Symptoms</p>
+        <h2>Spot patterns you'd otherwise miss.</h2>
+        <p class="lede">Log nausea, fatigue or anything else in a tap. Symptom Trends shows how often each comes up, week by week, beside your check-ins.</p>
+        <div class="facts"><span>One-tap logging</span><span>Week-by-week view</span><span>PDF for your clinic</span></div>
+      </div>
+      <div class="shot"><img src="assets/v18/symptoms.webp" alt="Symptoms log" loading="lazy" width="640" height="1391"></div>
     </div>
   </div>
-  <div class="notif-phones rv">
-    <div class="phone "><img src="assets/shots/lock.webp" width="600" height="1304" alt="iPhone lock screen showing a GLPMGR dose due and a low supply notification" loading="lazy" decoding="async"></div>
-    <div class="phone "><img src="assets/shots/permission.webp" width="600" height="1304" alt="The iOS prompt asking whether GLPMGR may send notifications" loading="lazy" decoding="async"></div>
-  </div>
-</div></section>
+</section>
 
-<section id="privacy"><div class="wrap">
-  <div class="privacy rv">
-    <span class="eyebrow">Private by design</span>
-    <h2>Health data this personal should stay yours.</h2>
-    <p class="sub">GLPMGR has no servers, no sign-up and no advertising. What you log lives on your device, and you decide whether anything ever leaves it.</p>
-    <div class="priv-grid">
-      <div class="priv-item"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><h3>On your device</h3><p>Doses, weight, symptoms and photos are kept on your iPhone, iPad or Watch. There&rsquo;s no GLPMGR server holding your information.</p></div>
-      <div class="priv-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><path d="m2 2 20 20"/><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/></svg><h3>No accounts, ads or tracking</h3><p>No sign-up, no adverts and no tracking tools. Nobody is building a profile of your health.</p></div>
-      <div class="priv-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg><h3>Never in the cloud</h3><p>Your entries are never synced to iCloud or anywhere else. Apple Health is opt-in and off by default.</p></div>
+<section style="padding-top:0" aria-labelledby="tour">
+  <div class="wrap section-head">
+    <p class="eyebrow">Take the tour</p>
+    <h2 id="tour">Ten screens. One calm routine.</h2>
+  </div>
+  <div class="gallery" tabindex="0" aria-label="App screenshots, scroll sideways">
+    <img src="assets/v18/panel-01.webp" alt="Your GLP-1 journey at a glance" loading="lazy">
+    <img src="assets/v18/panel-02.webp" alt="Weight trends" loading="lazy">
+    <img src="assets/v18/panel-03.webp" alt="Daily habits: water and protein" loading="lazy">
+    <img src="assets/v18/panel-04.webp" alt="Scan a food label" loading="lazy">
+    <img src="assets/v18/panel-05.webp" alt="Private progress photos" loading="lazy">
+    <img src="assets/v18/panel-06.webp" alt="Dose steps" loading="lazy">
+    <img src="assets/v18/panel-07.webp" alt="Injection areas" loading="lazy">
+    <img src="assets/v18/panel-08.webp" alt="Reminders" loading="lazy">
+    <img src="assets/v18/panel-09.webp" alt="On your wrist" loading="lazy">
+    <img src="assets/v18/panel-10.webp" alt="Daily check-in" loading="lazy">
+  </div>
+</section>
+
+<section id="medicines" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Medicines</p>
+      <h2>A GLP-1 tracker for the medicine you take.</h2>
+      <p class="lede">Choose your medicine when you log a dose, injection or tablet. Tap one to see where its manufacturer says it can be injected, or see <a href="site-guidance.html">injection sites by medicine</a>.</p>
     </div>
-    <a class="more" href="privacy.html">Read the full Privacy Policy &rarr;</a>
+    <div class="meds">
+      <div class="med"><b>Semaglutide</b><span><a href="ozempic-injection-sites.html">Ozempic</a>, <a href="wegovy-injection-sites.html">Wegovy</a>, <a href="glp-1-pill-tracker.html">Rybelsus</a></span></div>
+      <div class="med"><b>Tirzepatide</b><span><a href="mounjaro-injection-sites.html">Mounjaro</a>, <a href="zepbound-injection-sites.html">Zepbound</a></span></div>
+      <div class="med"><b>Liraglutide</b><span><a href="saxenda-injection-sites.html">Saxenda</a>, <a href="victoza-injection-sites.html">Victoza</a></span></div>
+      <div class="med"><b>Dulaglutide</b><span><a href="trulicity-injection-sites.html">Trulicity</a></span></div>
+      <div class="med"><b>Exenatide</b><span><a href="byetta-injection-sites.html">Byetta</a>, <a href="bydureon-bcise-injection-sites.html">Bydureon BCise</a></span></div>
+      <div class="med"><b>Orforglipron</b><span><a href="glp-1-pill-tracker.html">The new GLP-1 tablet</a></span></div>
+    </div>
   </div>
-</div></section>
+</section>
 
-<section id="devices"><div class="wrap devices">
-  <div class="art rv">
-    <div class="tablet"><img src="assets/shots/ipad-today.webp" width="1000" height="1336" alt="GLPMGR on iPad showing the Today dashboard" loading="lazy" decoding="async"></div>
-    <div class="watch w2"><img src="assets/shots/watch-home.webp" width="416" height="496" alt="GLPMGR on Apple Watch showing time until next dose and weight trend" loading="lazy"></div>
-    <div class="watch"><img src="assets/shots/watch-log.webp" width="416" height="496" alt="Logging weight on Apple Watch" loading="lazy"></div>
+<section style="padding-top:0">
+  <div class="wrap privacy">
+    <p class="big">No account. No servers. <em>Just you.</em></p>
+    <div class="points">
+      <div><h3>On your devices</h3><p>Everything you log stays on the device you log it on. No server, no account, no iCloud copy.</p></div>
+      <div><h3>Locked photos</h3><p>Progress photos are encrypted and hidden behind Face ID until you look.</p></div>
+      <div><h3>Nothing to sell</h3><p>No ads, no tracking, no data brokers. GLPMGR is paid for by Premium, not by you.</p></div>
+    </div>
   </div>
-  <div class="rv">
-    <span class="eyebrow">Everywhere you are</span>
-    <h2 style="font-size:clamp(2rem,4vw,2.9rem);margin:14px 0 16px">On iPhone, iPad and your wrist.</h2>
-    <p class="muted" style="color:var(--ink-2)">The same calm experience, sized for whichever device is in reach.</p>
-    <ul class="checklist">
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Apple Watch:</b> see how long until your next dose and log your weight from your wrist.</span></li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Widgets &amp; Live Activities:</b> your next dose on the Home Screen and Lock Screen.</span></li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>iPad:</b> a roomy layout for charts and your full symptom history.</span></li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Your data, your device:</b> everything stays on the device you log it on, and you can export it any time.</span></li>
-    </ul>
-  </div>
-</div></section>
+</section>
 
-<section id="pricing"><div class="wrap">
-  <div class="sec-head center rv" style="text-align:center"><span class="eyebrow">Pricing</span>
-    <h2>Free to use. Premium when you want more.</h2>
-    <p>Dose logging, reminders, weight, symptoms, hydration, blood glucose, the Apple Watch app and data export are free, with no time limits and no ads. Premium adds more ways to see your progress, with a 7-day free trial on the yearly plan.</p></div>
-  <div class="plans">
-    <article class="plan rv"><h3>Monthly</h3>
-      <div class="price">£4.99<small> / month</small></div>
-      <p class="note">£4.99 a month. Cancel any time.</p></article>
-    <article class="plan best rv"><span class="tag">7 days free · Best value</span><h3>Yearly</h3>
-      <div class="price">£24.99<small> / year</small></div>
-      <p class="note">Try Premium free for 7 days, then £24.99 a year: around £2.08 a month, which saves 58% compared with paying monthly.</p></article>
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Everywhere you are</p><h2>On iPhone, iPad and your wrist.</h2></div>
+    <div class="devices">
+      <div class="device"><div class="pic"><img src="assets/v18/watch.webp" alt="Apple Watch showing the next dose" loading="lazy"></div><h3>Apple Watch</h3><p>Your next dose and a dose alarm on your wrist, plus water and weight in a tap.</p></div>
+      <div class="device"><div class="pic"><img src="assets/v18/today-dark.webp" alt="Today screen in dark mode" loading="lazy"></div><h3>Day and night</h3><p>A dark mode as calm as the light one, with stronger contrast when you need it.</p></div>
+      <div class="device"><div class="pic"><img src="assets/v18/panel-08.webp" alt="Reminders" loading="lazy"></div><h3>Gentle reminders</h3><p>Only when you ask, at the time you choose, with a Live Activity on dose day.</p></div>
+    </div>
   </div>
-  <ul class="incl rv">
-    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Estimated medication level chart</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Injection body map from manufacturer guidance</li>
-    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>PDF report for your doctor or nurse</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Blood glucose charts</li>
-    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Side-effect timing patterns</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Protein tracking</li>
-    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Progress photos &amp; measurements history</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Widgets &amp; Live Activities</li>
-  </ul>
-  <p class="plan-list">Free, always: dose logging with dose steps, reminders and supply alerts, weight and symptoms, water, blood glucose tracking, the Apple Watch app, and a full backup and spreadsheet export. Private by design either way: your data stays on your device.</p>
-  <p class="plan-list">Prices shown in GBP; local pricing is set by the App Store. Subscriptions auto-renew until cancelled and can be managed in your Apple ID settings. The free trial applies to eligible new subscribers on the yearly plan. See the <a href="terms.html#subscriptions">Terms of Use</a>.</p>
-</div></section>
+</section>
 
-<section id="faq"><div class="wrap">
-  <div class="sec-head center rv" style="text-align:center"><span class="eyebrow">FAQ</span><h2>Good questions</h2></div>
-  <div class="faq-list rv"><details class="faq"><summary>Is there an app to track GLP-1 injections?</summary><p>Yes. GLPMGR is a private GLP-1 tracker for iPhone, iPad and Apple Watch. It records each injection with its dose and injection site, follows your dose steps (titration), tracks weight and side effects, and reminds you when your next dose is due. It needs no account and keeps your data on your device.</p></details><details class="faq"><summary>Which GLP-1 medicines can I track?</summary><p>Semaglutide (including Ozempic and Wegovy), tirzepatide (Mounjaro and Zepbound), liraglutide (Saxenda and Victoza), dulaglutide (Trulicity) and exenatide (Byetta and Bydureon) as injections, and, as tablets, semaglutide (Rybelsus and the Wegovy pill) and orforglipron (Foundayo). You can also type in any other medicine by name. Injection-site information is shown only for medicines with a verified manufacturer list.</p></details><details class="faq"><summary>Can I use GLPMGR as a Mounjaro, Ozempic, Wegovy or Zepbound tracker?</summary><p>Yes. Choose the medicine when you record a dose, set your schedule and dose steps, and GLPMGR tracks the rest. GLPMGR is an independent app and is not affiliated with any manufacturer; brand names are used only to say which medicines it works with.</p></details><details class="faq"><summary>Does GLPMGR tell me where to inject?</summary><p>No. It shows the injection areas the manufacturer lists for your medicine in your region, and marks on a body map where you have injected before. It does not recommend a site, and it is not medical advice. Talk to your doctor, pharmacist or nurse about where and how to inject.</p></details><details class="faq"><summary>How does GLPMGR help with injection site rotation?</summary><p>Each injection can be recorded against one of the listed areas. The body map shades areas by how often you have used them, so you can see your own history at a glance. Where the manufacturer gives rotation wording, GLPMGR shows it word for word.</p></details><details class="faq"><summary>Where can I see the manufacturer&#x27;s injection sites for my medicine?</summary><p>On our injection site guidance pages, one for each medicine. Each shows the areas the manufacturer lists in the UK, EU and US, any rule that another person should inject an area or that you keep a distance from your belly button, the manufacturer&#x27;s rotation wording, and links to the documents.</p></details><details class="faq"><summary>Does GLPMGR support dose steps (titration)?</summary><p>Yes. Most GLP-1 medicines start at a low dose and step up over a few weeks, which doctors call titration. Enter the steps your prescriber gave you and GLPMGR fills in the right dose whenever you log an injection, up to your maintenance dose (the dose you stay on). It never works out or recommends a dose.</p></details><details class="faq"><summary>Can I track my weight in kilograms, pounds or stones?</summary><p>Yes. You can log weight in kilograms, pounds or stones, and set a goal if you want one. Weight can also sync with Apple Health, which is off until you turn it on.</p></details></div>
-  <p class="rv" style="text-align:center;margin-top:28px;color:var(--ink-2)">Comparing apps? Here&rsquo;s <a href="glp-1-app.html">what a good GLP-1 app should do</a>. See the <a href="guide.html">user guide</a>, <a href="faq.html">all questions and answers</a>, visit our <a href="support.html">Support page</a>, or email <a href="mailto:info@isafenet.app">info@isafenet.app</a>.</p>
-</div></section>
+<section id="pricing" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Pricing</p><h2>Free to use. Premium when you want more.</h2></div>
+    <div class="plans">
+      <div class="plan"><h3>Free</h3><p class="price">£0 <small>forever</small></p>
+        <ul><li>Dose logging, steps and reminders</li><li>Weight, symptoms and the daily check-in</li><li>Water, protein and blood glucose</li><li>Apple Watch app and data export</li></ul></div>
+      <div class="plan premium"><h3>Premium</h3><p class="price">£24.99 <small>a year · 7 days free</small></p>
+        <p style="color:var(--ink-soft)">or £4.99 a month. Cancel any time.</p>
+        <ul><li>Estimated medication level chart</li><li>Injection body map from manufacturer guidance</li><li>PDF report for your doctor or nurse</li><li>Body composition, photo comparison and more</li></ul></div>
+    </div>
+  </div>
+</section>
 
-<section class="final"><div class="wrap"><div class="box rv">
-  <h2>Take the guesswork out of your GLP-1 routine.</h2>
-  <p>Keep track of your doses, injection sites, weight and how you feel, privately, on the devices you already use.</p>
-  <a class="btn " href="https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg> Download on the App Store</a>
-</div></div></section>
-</main>
-<footer class="footer"><div class="wrap">
-  <div class="foot-grid">
-    <a class="brand" href="index.html"><img src="assets/icon-192.png" width="36" height="36" alt="">GLPMGR</a>
-    <nav class="foot-links" aria-label="Footer">
-      <a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a><a href="faq.html">FAQ</a><a href="guide.html">User guide</a><a href="glp-1-app.html">Choosing a GLP-1 app</a><a href="glp-1-pill-tracker.html">GLP-1 pill tracker</a><a href="site-guidance.html">Injection sites by medicine</a><a href="glossary.html">Words explained</a><a href="https://isafenet.app/">iSafeNet</a><a href="mailto:info@isafenet.app">info@isafenet.app</a>
-    </nav>
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Good questions</p><h2>Before you download.</h2></div>
+    <div class="faq">
+      <details open><summary>Is there an app to track GLP-1 injections?</summary><p>Yes. GLPMGR is a private GLP-1 tracker for iPhone, iPad and Apple Watch. It records each injection with its dose and injection site, follows your dose steps (titration), tracks weight and side effects, and reminds you when your next dose is due. It needs no account and keeps your data on your device.</p></details>
+      <details><summary>Which GLP-1 medicines can I track?</summary><p>Semaglutide (including Ozempic and Wegovy), tirzepatide (Mounjaro and Zepbound), liraglutide (Saxenda and Victoza), dulaglutide (Trulicity) and exenatide (Byetta and Bydureon) as injections, and, as tablets, semaglutide (Rybelsus and the Wegovy pill) and orforglipron (Foundayo). You can also type in any other medicine by name. Injection-site information is shown only for medicines with a verified manufacturer list.</p></details>
+      <details><summary>Can I use GLPMGR as a Mounjaro, Ozempic, Wegovy or Zepbound tracker?</summary><p>Yes. Choose the medicine when you record a dose, set your schedule and dose steps, and GLPMGR tracks the rest. GLPMGR is an independent app and is not affiliated with any manufacturer; brand names are used only to say which medicines it works with.</p></details>
+      <details><summary>Does GLPMGR tell me where to inject?</summary><p>No. It shows the injection areas the manufacturer lists for your medicine in your region, and marks on a body map where you have injected before. It does not recommend a site, and it is not medical advice. Talk to your doctor, pharmacist or nurse about where and how to inject.</p></details>
+      <details><summary>How does GLPMGR help with injection site rotation?</summary><p>Each injection can be recorded against one of the listed areas. The body map shades areas by how often you have used them, so you can see your own history at a glance. Where the manufacturer gives rotation wording, GLPMGR shows it word for word.</p></details>
+      <details><summary>Where can I see the manufacturer&#x27;s injection sites for my medicine?</summary><p>On our injection site guidance pages, one for each medicine. Each shows the areas the manufacturer lists in the UK, EU and US, any rule that another person should inject an area or that you keep a distance from your belly button, the manufacturer&#x27;s rotation wording, and links to the documents.</p></details>
+      <details><summary>Does GLPMGR support dose steps (titration)?</summary><p>Yes. Most GLP-1 medicines start at a low dose and step up over a few weeks, which doctors call titration. Enter the steps your prescriber gave you and GLPMGR fills in the right dose whenever you log an injection, up to your maintenance dose (the dose you stay on). It never works out or recommends a dose.</p></details>
+      <details><summary>Can I track my weight in kilograms, pounds or stones?</summary><p>Yes. You can log weight in kilograms, pounds or stones, and set a goal if you want one. Weight can also sync with Apple Health, which is off until you turn it on.</p></details>
+    </div>
+    <p style="margin-top:20px;color:var(--ink-soft)">See <a href="faq.html">all questions and answers</a>, <a href="glp-1-app.html">what a good GLP-1 app should do</a>, the <a href="guide.html">user guide</a> or <a href="support.html">Support</a>.</p>
   </div>
-  <div class="fine">
-    <p><b>GLPMGR is a personal tracking tool, not a medical device.</b> It does not provide medical advice, diagnosis or treatment, and nothing in the app is a recommendation about what, when or how much medication to take. Always consult your doctor or pharmacist.</p>
-    <p>Medication and brand names are trademarks of their respective owners. GLPMGR is an independent app and is not affiliated with, endorsed by or sponsored by any medication manufacturer. Apple, iPhone, iPad, Apple Watch, Apple Health and App Store are trademarks of Apple Inc.</p>
-    <p>© 2026 <a href="https://isafenet.app/">iSafeNet</a>. GLPMGR is made with care for people on their GLP-1 journey. More from iSafeNet: <a href="https://airreveal.isafenet.app/">AirReveal</a>, a window-seat companion that shows what you're flying over, and <a href="https://udapt.isafenet.app/">Udapt</a>, an adaptive training and food plan.</p>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="final">
+      <h2>Take the guesswork out of your GLP-1 routine.</h2>
+      <p>Download GLPMGR free, set your medicine and dose steps, and know where you are from the first dose.</p>
+      <div class="cta-row">
+        <a class="store" href="https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.72-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.28-.88-2.3-3.48zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.65-1.05 1.68-.92 2.67.97.08 1.96-.49 2.56-1.22z"/></svg><span><small>Download on the</small><b>App Store</b></span></a>
+      </div>
+    </div>
   </div>
-</div></footer>
-<script>
-(function(){
-  var els=[].slice.call(document.querySelectorAll(".rv"));
-  if(!("IntersectionObserver" in window)||/[?&]static/.test(location.search)){els.forEach(function(e){e.classList.add("in")});}
-  else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{rootMargin:"0px 0px -8% 0px",threshold:.05});els.forEach(function(e){io.observe(e)});}
-  var rail=document.querySelector(".rail");
-  function step(d){var s=rail.querySelector(".slide");rail.scrollBy({left:d*(s.offsetWidth+28),behavior:"smooth"})}
-  var pv=document.getElementById("rail-prev"),nx=document.getElementById("rail-next");
-  if(rail&&pv&&nx){pv.addEventListener("click",function(){step(-1)});nx.addEventListener("click",function(){step(1)});}
-})();
-</script>
-</body></html>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>GLPMGR is a tracker, not medical advice. Always follow your prescriber and your medicine's leaflet. © 2026 iSafeNet.</p>
+    <p>Photos on Unsplash: Kristaps Ungurs, Aimee Giles, Fabrice Villard.</p>
+    <p class="foot-links"><a href="guide.html">User guide</a> · <a href="faq.html">Questions and answers</a> · <a href="site-guidance.html">Injection sites by medicine</a> · <a href="glp-1-pill-tracker.html">GLP-1 pill tracker</a> · <a href="glp-1-app.html">Choosing a GLP-1 app</a> · <a href="glossary.html">Words explained</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="https://isafenet.app/">iSafeNet</a></p>
+  </div>
+</footer>
+</body>
+</html>
