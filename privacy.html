@@ -41,7 +41,7 @@
   <div class="doc-tabs" role="navigation" aria-label="Legal and support pages"><a href="terms.html">Terms of Use</a><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="support.html">Support</a></div>
   <p class="eyebrow">Privacy Policy</p>
   <h1>How GLPMGR handles your data</h1>
-  <p class="meta">Effective October 9, 2026</p>
+  <p class="meta">Effective October 14, 2026</p>
   <div class="lede">
       <strong>In short:</strong> GLPMGR keeps your health data on your device. It is never sent to iCloud or anywhere else. There are no GLPMGR servers, no analytics, and no advertising in this app — full stop.
     </div>
@@ -108,7 +108,8 @@
 
   <section class="clause" id="storage">
     <h2 class="clause-title"><span class="num">5</span> Where your data lives</h2>
-    <p>Everything you record is stored locally on your device in a private, sandboxed app database, shared only between the GLPMGR app, its Today/Next Dose widgets and Live Activity, and — if you use the GLPMGR Apple Watch app — your paired Apple Watch. The Watch receives your next dose, medication and recent weights from your iPhone, and can send a weight you log on the Watch back to it; these transfers go directly between your own devices using Apple's WatchConnectivity, never through a server. GLPMGR does not operate any backend servers, and nothing you enter is uploaded anywhere by default. Your data is <strong>never synced to iCloud</strong>, so each device keeps its own separate log, and it is also <strong>excluded from iCloud Backup and from a computer backup</strong> — restoring or migrating a device does not bring GLPMGR's data with it. Exporting a JSON backup from Settings → Data & Backup and importing it on the other device is the only way to move your data or recover it after a lost or wiped device; that export is a complete copy, including your photos, dosing schedules and settings, and stays entirely on-device unless you choose where to save or send the file. You set a password when you create it, and the file is encrypted with a key derived from that password — GLPMGR never stores the password itself, so losing it means the backup can't be recovered, by you or by anyone else.</p>
+    <p>Everything you record is stored locally on your device in a private, sandboxed app database, shared only between the GLPMGR app, its Today/Next Dose widgets and Live Activity, and — if you use the GLPMGR Apple Watch app — your paired Apple Watch. The Watch receives your next dose, medication and recent weights from your iPhone, and can send a weight you log on the Watch back to it; these transfers go directly between your own devices using Apple's WatchConnectivity, never through a server. GLPMGR does not operate any backend servers, and nothing you enter is uploaded anywhere. The one thing that ever leaves your device is a barcode number, and only when you choose to scan one (see below). Your data is <strong>never synced to iCloud</strong>, so each device keeps its own separate log, and it is also <strong>excluded from iCloud Backup and from a computer backup</strong> — restoring or migrating a device does not bring GLPMGR's data with it. Exporting a JSON backup from Settings → Data & Backup and importing it on the other device is the only way to move your data or recover it after a lost or wiped device; that export is a complete copy, including your photos, dosing schedules and settings, and stays entirely on-device unless you choose where to save or send the file. You set a password when you create it, and the file is encrypted with a key derived from that password — GLPMGR never stores the password itself, so losing it means the backup can't be recovered, by you or by anyone else.</p>
+      <p><strong>Scanning a food barcode</strong> (Protein) is optional, and is the only request GLPMGR itself makes over the internet. To look the product up, GLPMGR sends the number under its barcode to <a href="https://world.openfoodfacts.org/">Open Food Facts</a>, a nonprofit, open food database. Nothing else is sent: nothing about you, your medicine or what you've logged. Like any web request, Open Food Facts can see your device's IP address; its <a href="https://world.openfoodfacts.org/privacy">privacy policy</a> explains how it handles requests. The app says this before you scan, and searching for a food, reading a nutrition label and photo or voice logging all work on your device instead.</p>
   </section>
 
   <section class="clause" id="notifications">
@@ -129,7 +130,7 @@
 
   <section class="clause" id="no-tracking">
     <h2 class="clause-title"><span class="num">9</span> No analytics, ads, or tracking</h2>
-    <p>GLPMGR contains no analytics SDKs, no advertising networks, and no third-party trackers of any kind. We do not know how often you open the app, which screens you visit, or anything else about your usage. There is nothing to opt out of, because nothing is being collected. The app itself makes no network requests to us. The links in the app to the Terms of Use and this Privacy Policy open web pages hosted on GitHub Pages in your browser; like any website visit, that request is visible to the web host, and it is separate from anything you record in GLPMGR.</p>
+    <p>GLPMGR contains no analytics SDKs, no advertising networks, and no third-party trackers of any kind. We do not know how often you open the app, which screens you visit, or anything else about your usage. There is nothing to opt out of, because nothing is being collected. The app itself makes no network requests to us. Its only network request is the optional barcode lookup at Open Food Facts (section 5), which sends the barcode number and nothing else. The links in the app to the Terms of Use and this Privacy Policy open web pages hosted on GitHub Pages in your browser; like any website visit, that request is visible to the web host, and it is separate from anything you record in GLPMGR.</p>
   </section>
 
   <section class="clause" id="sharing">
@@ -137,6 +138,7 @@
     <p>We don't share, sell, or rent your data to anyone — there is no data on our servers to share in the first place. The only parties who ever touch your information are:</p>
     <table class="datatable">
       <tr><th>Party</th><th>What they see</th><th>Why</th></tr>
+      <tr><td>Open Food Facts</td><td>The number under a food barcode you scan, and, as with any web request, your device's IP address. Nothing about you, your medicine or what you've logged</td><td>To look the product up, only when you scan a barcode</td></tr>
       <tr><td>Apple (HealthKit)</td><td>The weight you log (written to Health), and the nutrition, workout, blood glucose, smart-scale and step readings you allow GLPMGR to read</td><td>To sync with the Health app, on-device</td></tr>
       <tr><td>Apple (App Store)</td><td>Payment &amp; subscription status</td><td>To process your purchase</td></tr>
     </table>
