@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-itunes-app" content="app-id=6814282972">
+<title>GLPMGR: GLP-1-Tracker für iPhone, iPad &amp; Apple Watch</title>
+<meta name="description" content="Ein kostenloser, privater GLP-1-Tracker für deine Injektionen: Dosen, Dosisstufen, Gewicht, Symptome und Injektionsstellen. Semaglutid, Tirzepatid und mehr.">
+<meta name="theme-color" content="#0f8c78">
+<link rel="canonical" href="https://glpmgr.isafenet.app/de/">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="GLPMGR">
+<meta property="og:title" content="GLPMGR: GLP-1-Tracker für iPhone, iPad &amp; Apple Watch">
+<meta property="og:description" content="Ein kostenloser, privater GLP-1-Tracker für deine Injektionen: Dosen, Dosisstufen, Gewicht, Symptome und Injektionsstellen. Semaglutid, Tirzepatid und mehr.">
+<meta property="og:url" content="https://glpmgr.isafenet.app/de/">
+<meta property="og:image" content="https://glpmgr.isafenet.app/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GLPMGR: GLP-1-Tracker für iPhone, iPad &amp; Apple Watch">
+<meta name="twitter:description" content="Ein kostenloser, privater GLP-1-Tracker für deine Injektionen: Dosen, Dosisstufen, Gewicht, Symptome und Injektionsstellen. Semaglutid, Tirzepatid und mehr.">
+<meta name="twitter:image" content="https://glpmgr.isafenet.app/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GLPMGR","url":"https://glpmgr.isafenet.app/de/","image":"https://glpmgr.isafenet.app/assets/icon-512.png","inLanguage":"de","description":"Ein kostenloser, privater GLP-1-Tracker für deine Injektionen: Dosen, Dosisstufen, Gewicht, Symptome und Injektionsstellen. Semaglutid, Tirzepatid und mehr.","applicationCategory":"HealthApplication","operatingSystem":"iOS, iPadOS, watchOS","installUrl":"https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972","downloadUrl":"https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972","publisher":{"@type":"Organization","@id":"https://isafenet.app/#organization","name":"iSafeNet","url":"https://isafenet.app/"},"offers":[{"@type":"Offer","price":"0","priceCurrency":"GBP","name":"Free"},{"@type":"Offer","price":"4.99","priceCurrency":"GBP","name":"Premium Monthly"},{"@type":"Offer","price":"24.99","priceCurrency":"GBP","name":"Premium Yearly"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"GLPMGR","url":"https://glpmgr.isafenet.app/de/","inLanguage":"de"}</script>
+<link rel="alternate" hreflang="en" href="https://glpmgr.isafenet.app/"><link rel="alternate" hreflang="es" href="https://glpmgr.isafenet.app/es/"><link rel="alternate" hreflang="fr" href="https://glpmgr.isafenet.app/fr/"><link rel="alternate" hreflang="de" href="https://glpmgr.isafenet.app/de/"><link rel="alternate" hreflang="it" href="https://glpmgr.isafenet.app/it/"><link rel="alternate" hreflang="pt-PT" href="https://glpmgr.isafenet.app/pt/"><link rel="alternate" hreflang="pt-BR" href="https://glpmgr.isafenet.app/pt-br/"><link rel="alternate" hreflang="x-default" href="https://glpmgr.isafenet.app/"><style>.lang{position:relative;margin-left:18px}.lang summary{list-style:none;cursor:pointer;padding:7px 12px;border:1px solid var(--line);border-radius:999px;font-weight:700;font-size:.9rem;color:var(--ink);background:var(--surface,var(--paper));white-space:nowrap}.lang summary::-webkit-details-marker{display:none}.lang-menu{position:absolute;right:0;top:calc(100% + 8px);z-index:60;min-width:210px;padding:8px;background:var(--surface,var(--paper));border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 40px rgba(0,0,0,.18)}.lang-menu a,.nav-links .lang-menu a{display:block;padding:9px 12px;border-radius:10px;color:var(--ink);text-decoration:none;font-weight:600}.lang-menu a:hover,.lang-menu a[aria-current]{background:var(--surface-2,var(--mist))}@media (max-width:760px){.nav .wrap>.lang{margin-left:auto}}.fine .legal-note{opacity:.85}</style>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/v18/atkinson-hyperlegible-italic-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/v18/atkinson-hyperlegible-italic-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/v18/atkinson-hyperlegible-normal-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/v18/atkinson-hyperlegible-normal-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/v18/atkinson-hyperlegible-normal-700-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/v18/atkinson-hyperlegible-normal-700-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 500 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../assets/v18/bricolage-grotesque-normal-500-800-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 500 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../assets/v18/bricolage-grotesque-normal-500-800-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* Layout: a misty full-bleed opener, then calm alternating rows of real screens; one bold moment, the 1.8 check-in band. */
+:root{
+  --mist:#EEF3F1; --paper:#FFFFFF; --ink:#13211D; --ink-soft:#4C5D57; --line:#D3DDD9;
+  --spruce:#0C6E5E; --spruce-ink:#0A5A4D; --tide:#1D5FA6; --dawn:#F2C14E; --on-accent:#FFFFFF;
+  --hero-ink:#FFFFFF; --hero-scrim:rgba(8,20,17,.62);
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body:"Atkinson Hyperlegible", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --radius:22px; --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --mist:#0B1513; --paper:#12201C; --ink:#E7EFEC; --ink-soft:#A4B5AF; --line:#24352F;
+  --spruce:#3FBFA6; --spruce-ink:#7FD9C7; --tide:#7FB2EE; --dawn:#F2C14E; --on-accent:#06231D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --mist:#0B1513; --paper:#12201C; --ink:#E7EFEC; --ink-soft:#A4B5AF; --line:#24352F;
+  --spruce:#3FBFA6; --spruce-ink:#7FD9C7; --tide:#7FB2EE; --dawn:#F2C14E; --on-accent:#06231D; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--mist);color:var(--ink);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--spruce-ink)}
+:focus-visible{outline:3px solid var(--dawn);outline-offset:3px;border-radius:8px}
+h1,h2,h3{font-family:var(--display);line-height:1.08;text-wrap:balance;margin:0;letter-spacing:-.015em}
+h2{font-size:clamp(1.9rem,4.2vw,3rem);font-weight:800}
+h3{font-size:1.3rem;font-weight:700}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:20px}
+.eyebrow{font:700 .78rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--spruce-ink)}
+.lede{color:var(--ink-soft);font-size:1.15rem;max-width:58ch}
+section{padding-block:clamp(56px,9vw,112px)}
+
+/* nav */
+.nav{position:absolute;inset-inline:0;top:0;z-index:5;padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{display:flex;align-items:center;gap:20px;padding-block:18px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:800 1.15rem var(--display)}
+.brand img{width:36px;height:36px;border-radius:9px}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0 0 0 auto;padding:0}
+.nav ul a{color:rgba(255,255,255,.88);text-decoration:none;font-size:.95rem}
+.nav ul a:hover{color:#fff}
+@media (max-width:760px){.nav ul{display:none}}
+
+/* app store button */
+.store{display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;text-decoration:none;border-radius:14px;padding:11px 18px 11px 14px;border:1px solid rgba(255,255,255,.25)}
+.store svg{width:26px;height:26px;fill:#fff}
+.store small{display:block;font-size:.68rem;line-height:1;opacity:.85}
+.store b{display:block;font:700 1.12rem/1.1 var(--display)}
+
+/* hero */
+.hero{position:relative;color:var(--hero-ink);overflow:hidden;padding-block:clamp(110px,14vw,150px) 0}
+.hero-bg{position:absolute;inset:0;background:url(../assets/v18/hero.webp) center 35%/cover}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,17,.55) 0%,var(--hero-scrim) 45%,var(--mist) 100%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.9rem);font-weight:800;letter-spacing:-.03em}
+.hero .lede{color:rgba(255,255,255,.9);margin-top:18px}
+.hero-copy{padding-bottom:clamp(40px,8vw,110px);display:grid;gap:0;min-width:0}
+.hero .eyebrow{color:var(--dawn);margin-bottom:16px}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:30px}
+.cta-note{font-size:.9rem;color:rgba(255,255,255,.85)}
+.phone{position:relative;justify-self:center;width:min(330px,80vw)}
+.phone .frame{border-radius:46px;padding:10px;background:#0c0f0e;box-shadow:0 40px 80px -30px rgba(0,0,0,.6),inset 0 0 0 2px #2a2f2d}
+.phone .frame img{border-radius:37px}
+.chip{position:absolute;display:flex;align-items:center;gap:10px;background:var(--paper);color:var(--ink);border-radius:16px;padding:10px 14px;box-shadow:0 18px 40px -18px rgba(0,0,0,.45);font-size:.88rem;white-space:nowrap}
+.chip b{font-family:var(--display);font-size:1.05rem}
+.chip .ring{width:34px;height:34px;border-radius:50%;background:conic-gradient(var(--spruce) 0 78%,var(--line) 0);display:grid;place-items:center}
+.chip .ring::after{content:"";width:24px;height:24px;border-radius:50%;background:var(--paper)}
+.chip.a{left:-22%;top:26%}
+.chip.b{right:-16%;top:56%}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero-copy{padding-bottom:30px}.chip.a{left:-6%}.chip.b{right:-6%}}
+@media (max-width:420px){.chip{font-size:.78rem;padding:8px 10px}.chip.a{left:-2%;top:18%}.chip.b{right:-2%}}
+
+/* proof strip */
+.proof{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;padding-block:26px;color:var(--ink-soft);font-size:.95rem}
+.proof span{display:flex;align-items:center;gap:8px}
+.proof svg{width:18px;height:18px;stroke:var(--spruce);fill:none;stroke-width:2.2}
+
+/* 1.8 band */
+.new18{background:linear-gradient(135deg,#0B4E44,#0D3B5E);color:#fff;border-radius:32px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+.new18 .copy{padding:clamp(28px,5vw,56px);display:grid;gap:16px;align-content:center;min-width:0}
+.new18 .eyebrow{color:var(--dawn)}
+.new18 h2{color:#fff}
+.new18 p{color:rgba(255,255,255,.88)}
+.badge-event{display:inline-flex;gap:8px;align-items:center;justify-self:start;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 14px;font-size:.88rem}
+.badge-event i{width:8px;height:8px;border-radius:50%;background:var(--dawn);display:block}
+.checks{list-style:none;padding:0;margin:6px 0 0;display:grid;gap:10px}
+.checks li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
+.checks svg{width:20px;height:20px;stroke:var(--dawn);fill:none;stroke-width:2.6;margin-top:3px}
+.new18 .art{position:relative;min-height:320px;background:url(../assets/v18/checkin-photo.webp) center/cover}
+.new18 .art img{position:absolute;right:8%;bottom:-6%;width:52%;max-width:240px;border-radius:30px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);border:8px solid #0c0f0e}
+@media (max-width:820px){.new18{grid-template-columns:1fr}.new18 .art{min-height:360px}}
+
+/* feature rows */
+.rows{display:grid;gap:clamp(56px,9vw,104px)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,72px);align-items:center}
+.row:nth-child(even) .shot{order:-1}
+.row .copy{display:grid;gap:14px;min-width:0}
+.shot{justify-self:center;width:min(300px,78vw)}
+.shot img{border-radius:34px;border:9px solid #0c0f0e;box-shadow:0 30px 60px -28px rgba(10,30,25,.55)}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.facts span{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.88rem;color:var(--ink-soft)}
+@media (max-width:820px){.row{grid-template-columns:1fr}.row .shot{order:-1}}
+
+/* gallery */
+.gallery{display:grid;grid-auto-flow:column;grid-auto-columns:min(240px,62vw);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 18px;margin-inline:auto;max-width:var(--wrap);scrollbar-width:thin}
+.gallery img{border-radius:20px;scroll-snap-align:start;box-shadow:0 14px 30px -18px rgba(0,0,0,.4)}
+.section-head{display:grid;gap:12px;margin-bottom:34px;max-width:720px}
+
+/* medicines */
+.meds{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
+.med{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:grid;gap:4px}
+.med b{font-family:var(--display);font-size:1.12rem}
+.med span{color:var(--ink-soft);font-size:.95rem}
+.med a{color:var(--spruce-ink)}
+
+/* privacy */
+.privacy{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.privacy .big{font:800 clamp(2.2rem,5.5vw,3.8rem)/1.02 var(--display);letter-spacing:-.03em}
+.privacy .big em{font-style:normal;color:var(--spruce-ink)}
+.points{display:grid;gap:18px}
+.points div{display:grid;gap:4px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:820px){.privacy{grid-template-columns:1fr}}
+
+/* devices */
+.devices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.device{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:grid;gap:12px;align-content:start;min-width:0}
+.device .pic{display:grid;place-items:center;min-height:220px;background:var(--mist);border-radius:16px}
+.device .pic img{max-height:200px;width:auto}
+@media (max-width:820px){.devices{grid-template-columns:1fr}}
+
+/* pricing */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:900px}
+.plan{background:var(--paper);border:1px solid var(--line);border-radius:26px;padding:28px;display:grid;gap:14px;align-content:start}
+.plan.premium{border:2px solid var(--spruce)}
+.price{font:800 2.4rem/1 var(--display)}
+.price small{font:400 1rem var(--body);color:var(--ink-soft)}
+.plan ul{margin:0;padding-left:1.1em;display:grid;gap:6px;color:var(--ink-soft)}
+@media (max-width:720px){.plans{grid-template-columns:1fr}}
+
+/* faq */
+.faq{max-width:820px;display:grid;gap:10px}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:4px 20px}
+.faq summary{cursor:pointer;font:700 1.08rem var(--display);padding-block:14px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--spruce-ink)}
+.faq details[open] summary::after{content:"–"}
+.faq p{padding-bottom:16px;color:var(--ink-soft)}
+
+/* final cta */
+.final{position:relative;border-radius:32px;overflow:hidden;color:#fff;text-align:left;padding:clamp(36px,7vw,80px)}
+.final::before{content:"";position:absolute;inset:0;background:url(../assets/v18/sites-photo.webp) center/cover}
+.final::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,30,26,.88),rgba(8,30,26,.35))}
+.final>*{position:relative;z-index:1}
+.final h2{color:#fff;max-width:16ch}
+.final p{margin-top:12px;max-width:46ch;color:rgba(255,255,255,.9)}
+
+footer{padding-block:40px 60px;color:var(--ink-soft);font-size:.88rem}
+footer a{color:inherit}
+footer .wrap{display:grid;gap:10px}
+@media (prefers-reduced-motion:no-preference){
+  .phone .frame{animation:float 7s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-8px)}}
+}
+</style>
+<style>/* Apple's App Store badge, as supplied: 48 px high, a quarter of its height clear round it */.store-badge{display:inline-block;padding:12px 0;line-height:0}.store-badge img{display:block;height:48px;width:auto}.store-text{font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px}</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Hauptmenü">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="../assets/icon-192.png" alt="">GLPMGR</a>
+    <ul>
+      <li><a href="#new">Neu in 2.0</a></li>
+      <li><a href="#features">Funktionen</a></li>
+      <li><a href="#medicines">Medikamente</a></li>
+      <li><a href="#pricing">Preise</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="guide.html">Anleitung</a></li>
+    </ul>
+    <details class="lang"><summary aria-label="Sprache">🌐 Sprache</summary><div class="lang-menu"><a href="../index.html" hreflang="en" lang="en">English</a><a href="../es/index.html" hreflang="es" lang="es">Español</a><a href="../fr/index.html" hreflang="fr" lang="fr">Français</a><a href="../de/index.html" hreflang="de" lang="de" aria-current="true">Deutsch</a><a href="../it/index.html" hreflang="it" lang="it">Italiano</a><a href="../pt/index.html" hreflang="pt-PT" lang="pt-PT">Português (Portugal)</a><a href="../pt-br/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></div></details>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg" role="img" aria-label="Nebel über grünen Hügeln im Morgengrauen"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">GLP-1-Tracker · iPhone, iPad &amp; Apple Watch</p>
+      <h1>Der GLP-1-Tracker für deinen ganzen Weg.</h1>
+      <p class="lede">Dosen und Dosisstufen, Gewicht, Symptome, Injektionsstellen und ein täglicher Check-in, von der ersten Dosis bis zur Erhaltung, in einer ruhigen App, die alles auf deinen Geräten behält.</p>
+      <div class="cta-row">
+        <a class="store-badge" href="https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972"><img src="../images/app-store-badge-de-de.svg" alt="Laden im App Store" width="144" height="48"></a>
+        <span class="cta-note">Kostenlos · Kein Konto · Keine Werbung</span>
+      </div>
+    </div>
+    <div class="phone">
+      <div class="frame"><img src="../assets/v18/today.webp" alt="Der Heute-Bildschirm von GLPMGR: nächste Dosis in 6 Tagen und 17 Stunden, Ziel zu 78 % erreicht, noch 8,5 lb, Ringe für Wasser und Protein" width="640" height="1391"></div>
+      <div class="chip a"><span class="ring" aria-hidden="true"></span><span>Noch <b>8,5 lb</b></span></div>
+      <div class="chip b"><span>Dosisstufe <b>5 von 5</b></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <p class="proof" aria-label="Highlights">
+    <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Kein Konto, keine Server</span>
+    <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Jedes GLP-1-Medikament, als Injektion oder Tablette</span>
+    <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Ein Bericht für deine Praxis</span>
+    <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Für VoiceOver gemacht</span>
+  </p>
+</div>
+
+<section id="new">
+  <div class="wrap">
+    <article class="new18">
+      <div class="copy">
+        <!--event--><span class="badge-event" data-until="2026-11-15"><i aria-hidden="true"></i>App Store-Event · 15. Okt. – 14. Nov.</span>
+        <script>(function(e){if(Date.now()>=Date.parse(e.dataset.until))e.remove()})(document.currentScript.previousElementSibling)</script><!--/event-->
+        <p class="eyebrow">Neu in GLPMGR 2.0</p>
+        <h2>Starte da, wo du gerade stehst.</h2>
+        <p>„Dein Medikament einrichten“ stellt ein paar einfache Fragen, eine nach der anderen: ob du gleich anfängst, mitten in deinen Dosisstufen bist, deine Erhaltungsdosis nimmst oder gerade pausierst. GLPMGR macht dort weiter.</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Etwas hat sich geändert?</b> Höhere oder niedrigere Dosis, eine Pause oder das Ende der Behandlung: Trag es in einfachen Worten ein, und dein Plan passt sich nur an, wenn du das möchtest.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Nimm deine Dosen mit.</b> Importiere eine Tabelle aus deiner alten App, direkt auf deinem iPhone gelesen und nie doppelt eingetragen.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Erhaltungsmodus.</b> Wenn du dein Ziel erreicht hast, siehst du deinen aktuellen Durchschnitt neben einem Bereich, den du selbst wählst.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Hilfe mit Bildern</b> und Ermutigung, wenn du möchtest, mit optionalen Serien fürs Eintragen, nie für Dosen.</span></li>
+        </ul>
+      </div>
+      <div class="art" role="img" aria-label="Eine Tasse Tee am Morgen neben einem Fenster">
+        <img src="../assets/v18/panel-10.webp" alt="Der tägliche Check-in, eines der ruhigen täglichen Werkzeuge von GLPMGR" loading="lazy">
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="features" style="padding-top:0">
+  <div class="wrap rows">
+    <div class="row">
+      <div class="copy">
+        <p class="eyebrow">Dosen und Dosisstufen</p>
+        <h2>So weißt du genau, wo du stehst.</h2>
+        <p class="lede">Trag eine Dosis in Sekunden ein. GLPMGR zählt bis zur nächsten herunter, zeigt, auf welcher Dosisstufe du bist und wann die nächste Stufe ansteht, und behält jede Dosis, die du auf jeder Stufe eingetragen hast.</p>
+        <div class="facts"><span>Countdown auf die Stunde genau</span><span>Injektionen und Tabletten</span><span>Jede Dosis auf jeder Stufe</span></div>
+      </div>
+      <div class="shot"><img src="../assets/v18/titration.webp" alt="Der Bildschirm der Dosisstufen mit fünf Stufen Tirzepatid" loading="lazy" width="640" height="1391"></div>
+    </div>
+    <div class="row">
+      <div class="copy">
+        <p class="eyebrow">Injektionsstellen</p>
+        <h2>Wechsle die Stellen so, wie es die Packungsbeilage sagt.</h2>
+        <p class="lede">Eine Körperkarte der Bereiche, die der Hersteller deines Medikaments nennt, mit deinen letzten Stellen markiert, damit du mit gutem Gefühl weitermachen kannst. Im Vereinigten Königreich aus jeder Packungsbeilage, wie sie die MHRA veröffentlicht.</p>
+        <div class="facts"><span>Bauch, Oberschenkel, Oberarme</span><span>Letzte Stelle auf einen Blick</span></div>
+      </div>
+      <div class="shot"><img src="../assets/v18/bodymap.webp" alt="Körperkarte der Injektionsstellen" loading="lazy" width="640" height="1391"></div>
+    </div>
+    <div class="row">
+      <div class="copy">
+        <p class="eyebrow">Gewicht und Trends</p>
+        <h2>Sieh den Trend statt der täglichen Schwankungen.</h2>
+        <p class="lede">Eine geglättete Linie deines üblichen Gewichts, Wochendurchschnitte und die Dosen dazu. In Kilogramm, Pfund oder Stone, und mit deiner smarten Waage, wenn du eine hast.</p>
+        <div class="facts"><span>Gleitender Durchschnitt</span><span>Gewicht auf jeder Dosisstufe</span><span>Audiodiagramme</span></div>
+      </div>
+      <div class="shot"><img src="../assets/v18/trends.webp" alt="Diagramm der Gewichtstrends" loading="lazy" width="640" height="1391"></div>
+    </div>
+    <div class="row">
+      <div class="copy">
+        <p class="eyebrow">Symptome</p>
+        <h2>Erkenne Muster, die dir sonst entgehen.</h2>
+        <p class="lede">Trag Übelkeit, Müdigkeit oder anderes mit einem Fingertipp ein. Symptom-Trends zeigt, wie oft etwas vorkommt, Woche für Woche, neben deinen Check-ins.</p>
+        <div class="facts"><span>Eintragen mit einem Tipp</span><span>Woche für Woche</span><span>PDF für deine Praxis</span></div>
+      </div>
+      <div class="shot"><img src="../assets/v18/symptoms.webp" alt="Symptome im Überblick" loading="lazy" width="640" height="1391"></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0" aria-labelledby="tour">
+  <div class="wrap section-head">
+    <p class="eyebrow">Rundgang</p>
+    <h2 id="tour">Zehn Bildschirme. Eine ruhige Routine.</h2>
+  </div>
+  <div class="gallery" tabindex="0" aria-label="Screenshots der App, seitlich scrollen">
+    <img src="../assets/v18/panel-01.webp" alt="Dein Weg mit GLP-1 auf einen Blick" loading="lazy">
+    <img src="../assets/v18/panel-02.webp" alt="Gewichtstrends" loading="lazy">
+    <img src="../assets/v18/panel-03.webp" alt="Tägliche Gewohnheiten: Wasser und Protein" loading="lazy">
+    <img src="../assets/v18/panel-04.webp" alt="Nährwerttabelle scannen" loading="lazy">
+    <img src="../assets/v18/panel-05.webp" alt="Private Fortschrittsfotos" loading="lazy">
+    <img src="../assets/v18/panel-06.webp" alt="Dosisstufen" loading="lazy">
+    <img src="../assets/v18/panel-07.webp" alt="Injektionsbereiche" loading="lazy">
+    <img src="../assets/v18/panel-08.webp" alt="Erinnerungen" loading="lazy">
+    <img src="../assets/v18/panel-09.webp" alt="Am Handgelenk" loading="lazy">
+    <img src="../assets/v18/panel-10.webp" alt="Täglicher Check-in" loading="lazy">
+  </div>
+</section>
+
+<section id="medicines" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Medikamente</p>
+      <h2>Ein GLP-1-Tracker für dein Medikament.</h2>
+      <p class="lede">Wähle dein Medikament, wenn du eine Dosis einträgst, als Injektion oder Tablette. Tippe auf eines, um zu sehen, wo es laut Hersteller injiziert werden kann, oder sieh dir die <a href="site-guidance.html">Injektionsstellen nach Medikament</a> an.</p>
+    </div>
+    <div class="meds">
+      <div class="med"><b>Semaglutid</b><span><a href="ozempic-injection-sites.html">Ozempic</a>, <a href="wegovy-injection-sites.html">Wegovy</a>, <a href="../glp-1-pill-tracker.html">Rybelsus</a></span></div>
+      <div class="med"><b>Tirzepatid</b><span><a href="mounjaro-injection-sites.html">Mounjaro</a>, <a href="zepbound-injection-sites.html">Zepbound</a></span></div>
+      <div class="med"><b>Liraglutid</b><span><a href="saxenda-injection-sites.html">Saxenda</a>, <a href="victoza-injection-sites.html">Victoza</a></span></div>
+      <div class="med"><b>Dulaglutid</b><span><a href="trulicity-injection-sites.html">Trulicity</a></span></div>
+      <div class="med"><b>Orforglipron</b><span><a href="../glp-1-pill-tracker.html">Die neue GLP-1-Tablette</a></span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap privacy">
+    <p class="big">Kein Konto. Keine Server. <em>Nur du.</em></p>
+    <div class="points">
+      <div><h3>Auf deinen Geräten</h3><p>Alles, was du einträgst, bleibt auf deinen eigenen Geräten. Kein Server, kein Konto, keine Kopie in iCloud: Wenn du dein iPhone und iPad koppelst, synchronisieren sie direkt miteinander.</p></div>
+      <div><h3>Geschützte Fotos</h3><p>Fortschrittsfotos sind verschlüsselt und hinter Face ID verborgen, bis du sie ansiehst.</p></div>
+      <div><h3>Nichts zu verkaufen</h3><p>Keine Werbung, kein Tracking, keine Datenhändler. GLPMGR finanziert sich durch Premium, nicht durch deine Daten.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Überall, wo du bist</p><h2>Auf iPhone, iPad und am Handgelenk.</h2></div>
+    <div class="devices">
+      <div class="device"><div class="pic"><img src="../assets/v18/watch.webp" alt="Apple Watch mit der nächsten Dosis" loading="lazy"></div><h3>Apple Watch</h3><p>Deine nächste Dosis und ein Dosisalarm am Handgelenk, dazu Wasser und Gewicht mit einem Tipp.</p></div>
+      <div class="device"><div class="pic"><img src="../assets/v18/today-dark.webp" alt="Der Heute-Bildschirm im Dunkelmodus" loading="lazy"></div><h3>Tag und Nacht</h3><p>Ein Dunkelmodus, so ruhig wie der helle, mit stärkerem Kontrast, wenn du ihn brauchst.</p></div>
+      <div class="device"><div class="pic"><img src="../assets/v18/panel-08.webp" alt="Erinnerungen" loading="lazy"></div><h3>Sanfte Erinnerungen</h3><p>Nur wenn du möchtest, zu der Zeit, die du wählst, mit einer Live-Aktivität am Tag der Dosis.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Preise</p><h2>Kostenlos nutzbar. Premium, wenn du mehr möchtest.</h2></div>
+    <div class="plans">
+      <div class="plan"><h3>Kostenlos</h3><p class="price">0 € <small>dauerhaft</small></p>
+        <ul><li>Dosen eintragen, Dosisstufen und Erinnerungen</li><li>Gewicht, Symptome und der tägliche Check-in</li><li>Wasser, Protein und Blutzucker</li><li>Apple Watch-App und Datenexport</li></ul></div>
+      <div class="plan premium"><h3>Premium</h3><p class="price">Jahresabo <small>· 7 Tage gratis</small></p>
+        <p style="color:var(--ink-soft)">Oder als Monatsabo, jederzeit kündbar. Den Preis für dein Land zeigt der App Store.</p>
+        <ul><li>Diagramm des geschätzten Wirkstoffspiegels</li><li>Körperkarte der Injektionsstellen nach Herstellerangaben</li><li>PDF-Bericht für deine Praxis</li><li>Körperzusammensetzung, Fotovergleich und mehr</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Gute Fragen</p><h2>Bevor du die App lädst.</h2></div>
+    <div class="faq">
+      <details open><summary>Gibt es eine App, um GLP-1-Injektionen festzuhalten?</summary><p>Ja. GLPMGR ist ein privater GLP-1-Tracker für iPhone, iPad und Apple Watch. Er hält jede Injektion mit Dosis und Injektionsstelle fest, folgt deinen Dosisstufen (Titration), erfasst Gewicht und Nebenwirkungen und erinnert dich, wenn deine nächste Dosis fällig ist. Er braucht kein Konto und speichert deine Daten auf deinem Gerät.</p></details>
+      <details><summary>Welche GLP-1-Medikamente kann ich erfassen?</summary><p>Semaglutid (darunter Ozempic und Wegovy), Tirzepatid (Mounjaro und Zepbound), Liraglutid (Saxenda und Victoza) und Dulaglutid (Trulicity) als Injektion sowie als Tablette Semaglutid (Rybelsus und die Wegovy-Tablette) und Orforglipron (Foundayo). Du kannst auch jedes andere Medikament mit Namen eintippen. Informationen zu Injektionsstellen gibt es nur für Medikamente mit einer geprüften Liste des Herstellers.</p></details>
+      <details><summary>Kann ich GLPMGR als Tracker für Mounjaro, Ozempic, Wegovy oder Zepbound nutzen?</summary><p>Ja. Wähle das Medikament, wenn du eine Dosis einträgst, richte deinen Plan und deine Dosisstufen ein, und GLPMGR erfasst den Rest. GLPMGR ist eine unabhängige App und mit keinem Hersteller verbunden; Markennamen werden nur genannt, um zu sagen, mit welchen Medikamenten sie funktioniert.</p></details>
+      <details><summary>Sagt mir GLPMGR, wo ich injizieren soll?</summary><p>Nein. Es zeigt die Injektionsbereiche, die der Hersteller für dein Medikament in deiner Region angibt, und markiert auf einer Körperkarte, wo du schon injiziert hast. Es empfiehlt keine Stelle und ist keine medizinische Beratung. Sprich mit deiner Praxis oder Apotheke darüber, wo und wie du injizierst.</p></details>
+      <details><summary>Wie hilft GLPMGR beim Wechseln der Injektionsstelle?</summary><p>Jede Injektion lässt sich einem der aufgeführten Bereiche zuordnen. Die Körperkarte schattiert die Bereiche danach, wie oft du sie genutzt hast, sodass du deine bisherigen Injektionen auf einen Blick siehst. Wo der Hersteller Angaben zum Wechseln der Stelle macht, zeigt GLPMGR sie im Wortlaut.</p></details>
+      <details><summary>Wo sehe ich die Injektionsstellen des Herstellers für mein Medikament?</summary><p>Auf unseren Seiten zu Injektionsstellen, eine für jedes Medikament. Jede zeigt die Bereiche, die der Hersteller im Vereinigten Königreich, in der EU und in den USA angibt, etwaige Vorgaben, dass ein Bereich von einer anderen Person injiziert werden sollte oder dass du Abstand zum Bauchnabel hältst, die Angaben des Herstellers zum Wechseln der Stelle und Links zu den Dokumenten.</p></details>
+      <details><summary>Unterstützt GLPMGR Dosisstufen (Titration)?</summary><p>Ja. Die meisten GLP-1-Medikamente beginnen mit einer niedrigen Dosis und werden über einige Wochen schrittweise erhöht, in der Medizin Titration genannt. Gib die Stufen ein, die dir verordnet wurden, und GLPMGR setzt beim Eintragen einer Injektion deine aktuelle Dosis ein (die Stufe, auf der du bist) und nach den Stufen die Dosis deines Plans. Dein Plan zeigt, welche Stufen erledigt sind, auf welcher du gerade bist und was als Nächstes kommt. Es berechnet oder empfiehlt nie eine Dosis.</p></details>
+      <details><summary>Kann ich mein Gewicht in Kilogramm, Pfund oder Stone erfassen?</summary><p>Ja. Du kannst dein Gewicht in Kilogramm, Pfund oder Stone eintragen und ein Ziel festlegen, wenn du eines möchtest. Das Gewicht lässt sich auch mit Apple Health abgleichen; das ist aus, bis du es einschaltest.</p></details>
+    </div>
+    <p style="margin-top:20px;color:var(--ink-soft)">Sieh dir <a href="faq.html">alle Fragen und Antworten</a> an, <a href="../glp-1-app.html">was eine gute GLP-1-App können sollte</a> (auf Englisch), die <a href="guide.html">Anleitung</a> oder den <a href="support.html">Support</a>.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="final">
+      <h2>Deine GLP-1-Routine, ganz ohne Rätselraten.</h2>
+      <p>Lade GLPMGR kostenlos, richte dein Medikament und deine Dosisstufen ein und du weißt ab der ersten Dosis, wo du stehst.</p>
+      <div class="cta-row">
+        <a class="store-text" href="https://apps.apple.com/app/glpmgr-glp-1-tracker/id6814282972">Im App Store laden</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>GLPMGR ist ein Tracker und keine medizinische Beratung. Folge immer deiner Verordnung und der Packungsbeilage deines Medikaments. © 2026 iSafeNet.</p>
+    <p>Fotos auf Unsplash: Kristaps Ungurs, Aimee Giles, Fabrice Villard.</p>
+    <p class="foot-links"><a href="guide.html">Anleitung</a> · <a href="faq.html">Fragen und Antworten</a> · <a href="site-guidance.html">Injektionsstellen nach Medikament</a> · <a href="../glp-1-pill-tracker.html">GLP-1-Tabletten-Tracker (auf Englisch)</a> · <a href="../glp-1-app.html">Die richtige GLP-1-App finden (auf Englisch)</a> · <a href="glossary.html">Begriffe erklärt</a> · <a href="support.html">Support</a> · <a href="../privacy.html">Datenschutz (auf Englisch)</a> · <a href="../terms.html">Nutzungsbedingungen (auf Englisch)</a> · <a href="https://isafenet.app/">iSafeNet</a></p>
+    <p class="legal-note">Die Nutzungsbedingungen und die Datenschutzerklärung gibt es nur auf Englisch.</p>
+  </div>
+</footer>
+</body>
+</html>
