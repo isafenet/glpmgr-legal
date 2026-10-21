@@ -168,10 +168,11 @@ section{padding-block:clamp(56px,9vw,112px)}
 .chip b{font-family:var(--display);font-size:1.05rem}
 .chip .ring{width:34px;height:34px;border-radius:50%;background:conic-gradient(var(--spruce) 0 78%,var(--line) 0);display:grid;place-items:center}
 .chip .ring::after{content:"";width:24px;height:24px;border-radius:50%;background:var(--paper)}
-.chip.a{left:-22%;top:26%}
-.chip.b{right:-16%;top:56%}
+/* 2.2's Today: clear of the Next Dose countdown and Your Journey's figures */
+.chip.a{left:-22%;top:74%}
+.chip.b{right:-16%;top:12%}
 @media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero-copy{padding-bottom:30px}.chip.a{left:-6%}.chip.b{right:-6%}}
-@media (max-width:420px){.chip{font-size:.78rem;padding:8px 10px}.chip.a{left:-2%;top:18%}.chip.b{right:-2%}}
+@media (max-width:420px){.chip{font-size:.78rem;padding:8px 10px}.chip.a{left:-2%;top:74%}.chip.b{right:-2%}}
 
 /* proof strip */
 .proof{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;padding-block:26px;color:var(--ink-soft);font-size:.95rem}
@@ -191,6 +192,8 @@ section{padding-block:clamp(56px,9vw,112px)}
 .checks svg{width:20px;height:20px;stroke:var(--dawn);fill:none;stroke-width:2.6;margin-top:3px}
 .new18 .art{position:relative;min-height:320px;background:url(../assets/v18/checkin-photo.webp) center/cover}
 .new18 .art img{position:absolute;right:8%;bottom:-6%;width:52%;max-width:240px;border-radius:30px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);border:8px solid #0c0f0e}
+/* 2.2: the iPhone Duo open, a wide screen, centred on the photo */
+.new18 .art img.wide{right:auto;bottom:auto;left:50%;top:50%;transform:translate(-50%,-50%);width:86%;max-width:560px;height:auto;border-radius:22px;border-width:7px}
 @media (max-width:820px){.new18{grid-template-columns:1fr}.new18 .art{min-height:360px}}
 
 /* feature rows */
@@ -272,7 +275,7 @@ footer .wrap{display:grid;gap:10px}
   <div class="wrap">
     <a class="brand" href="#top"><img src="../assets/icon-192.png" alt="">GLPMGR</a>
     <ul>
-      <li><a href="#new">Novedades de la 2.0</a></li>
+      <li><a href="#new">Novedades de la 2.2</a></li>
       <li><a href="#features">Funciones</a></li>
       <li><a href="#medicines">Medicamentos</a></li>
       <li><a href="#pricing">Precios</a></li>
@@ -296,7 +299,7 @@ footer .wrap{display:grid;gap:10px}
       </div>
     </div>
     <div class="phone">
-      <div class="frame"><img src="../assets/v18/today.webp" alt="Pantalla Hoy de GLPMGR: próxima dosis en 6 días y 17 horas, objetivo al 78 % con 8,5 lb por delante, indicadores de agua y proteína" width="640" height="1391"></div>
+      <div class="frame"><img src="../assets/v18/today.webp" alt="Pantalla Hoy de GLPMGR: próxima dosis en 6 días y 13 horas con Registrar inyección, registro de un toque y Tu recorrido con −15,9 lb" width="640" height="1391"></div>
       <div class="chip a"><span class="ring" aria-hidden="true"></span><span>Faltan <b>8,5 lb</b></span></div>
       <div class="chip b"><span>Escalón de dosis <b>5 de 5</b></span></div>
     </div>
@@ -318,18 +321,18 @@ footer .wrap{display:grid;gap:10px}
       <div class="copy">
         <!--event--><span class="badge-event" data-until="2026-11-15"><i aria-hidden="true"></i>Evento del App Store · 15 oct – 14 nov</span>
         <script>(function(e){if(Date.now()>=Date.parse(e.dataset.until))e.remove()})(document.currentScript.previousElementSibling)</script><!--/event-->
-        <p class="eyebrow">Novedades de GLPMGR 2.0</p>
-        <h2>Empieza desde donde estés.</h2>
-        <p>«Configura tu medicamento» te hace unas preguntas sencillas, una a una: si vas a empezar, si estás a mitad de tus escalones de dosis, si ya tomas la dosis de mantenimiento o si estás haciendo una pausa. GLPMGR sigue desde ahí.</p>
+        <p class="eyebrow">Novedades de GLPMGR 2.2</p>
+        <h2>Hecha para el iPhone Duo, y más rápida cada día.</h2>
+        <p>Abre tu iPhone Duo y Hoy es una sola pantalla tranquila: tu próxima dosis junto a tu recorrido, con el registro de un toque debajo. En cualquier iPhone y iPad, registrar una dosis o un vaso de agua ahora es cuestión de un toque o dos.</p>
         <ul class="checks">
-          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>¿Algo ha cambiado?</b> Subir, bajar, una pausa o terminar: regístralo con palabras sencillas, y tu pauta solo cambia si así lo indicas.</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Trae tus dosis contigo.</b> Importa una hoja de cálculo de tu app anterior, leída en tu iPhone y sin duplicados.</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Modo mantenimiento.</b> Cuando alcances tu objetivo, mira tu media reciente junto a un rango que eliges tú.</span></li>
-          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Ayuda con imágenes,</b> y Ánimos si los quieres, con rachas opcionales por registrar, nunca por las dosis.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>iPhone Duo.</b> Abierto, se organiza como en un iPad. Medio abierto sobre una mesa, tu próxima dosis queda en la mitad de arriba y el registro en la de abajo. Cerrado, la pantalla exterior funciona como cualquier iPhone.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Registro rápido.</b> Un vaso de agua o una ración de proteína con un toque, con la opción de deshacer, y tu peso o el control de hoy a un toque.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>Registra una dosis en una sola pantalla.</b> Registrar inyección está siempre en Próxima dosis, con el lugar y el momento de tu última inyección.</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><b>iPad en horizontal.</b> Próxima dosis junto a Tu recorrido, Registro rápido, tu objetivo, el agua, tu semana y tus zonas de inyección, todo en una sola pantalla.</span></li>
         </ul>
       </div>
       <div class="art" role="img" aria-label="Una taza de té por la mañana junto a una ventana">
-        <img src="../assets/v18/panel-10.webp" alt="La pantalla del control diario, una de las herramientas tranquilas de GLPMGR para cada día" loading="lazy">
+        <img class="wide" src="../assets/v18/duo-today.webp" alt="GLPMGR abierta en el iPhone Duo: Próxima dosis junto a Tu recorrido, con Registro rápido debajo" width="900" height="633" loading="lazy">
       </div>
     </article>
   </div>
@@ -383,15 +386,15 @@ footer .wrap{display:grid;gap:10px}
   </div>
   <div class="gallery" tabindex="0" aria-label="Capturas de la app, desplázate hacia los lados">
     <img src="../assets/v18/panel-01.webp" alt="Tu recorrido GLP-1 de un vistazo" loading="lazy">
-    <img src="../assets/v18/panel-02.webp" alt="Tendencias de peso" loading="lazy">
-    <img src="../assets/v18/panel-03.webp" alt="Hábitos diarios: agua y proteína" loading="lazy">
-    <img src="../assets/v18/panel-04.webp" alt="Escanea una etiqueta de alimentos" loading="lazy">
-    <img src="../assets/v18/panel-05.webp" alt="Fotos de progreso privadas" loading="lazy">
-    <img src="../assets/v18/panel-06.webp" alt="Escalones de dosis" loading="lazy">
-    <img src="../assets/v18/panel-07.webp" alt="Zonas de inyección" loading="lazy">
-    <img src="../assets/v18/panel-08.webp" alt="Recordatorios" loading="lazy">
-    <img src="../assets/v18/panel-09.webp" alt="En tu muñeca" loading="lazy">
-    <img src="../assets/v18/panel-10.webp" alt="Control diario" loading="lazy">
+    <img src="../assets/v18/panel-02.webp" alt="Registra con un toque" loading="lazy">
+    <img src="../assets/v18/panel-03.webp" alt="Registra una dosis en una sola pantalla" loading="lazy">
+    <img src="../assets/v18/panel-04.webp" alt="Empieza desde donde estés" loading="lazy">
+    <img src="../assets/v18/panel-05.webp" alt="Tendencias de peso" loading="lazy">
+    <img src="../assets/v18/panel-06.webp" alt="Hábitos diarios: agua y proteína" loading="lazy">
+    <img src="../assets/v18/panel-07.webp" alt="Privada por diseño" loading="lazy">
+    <img src="../assets/v18/panel-08.webp" alt="Zonas de inyección" loading="lazy">
+    <img src="../assets/v18/panel-09.webp" alt="Recordatorios" loading="lazy">
+    <img src="../assets/v18/panel-10.webp" alt="En tu muñeca" loading="lazy">
   </div>
 </section>
 
@@ -425,11 +428,11 @@ footer .wrap{display:grid;gap:10px}
 
 <section style="padding-top:0">
   <div class="wrap">
-    <div class="section-head"><p class="eyebrow">Allí donde estés</p><h2>En el iPhone, el iPad y tu muñeca.</h2></div>
+    <div class="section-head"><p class="eyebrow">Allí donde estés</p><h2>En el iPhone, el iPhone Duo, el iPad y tu muñeca.</h2></div>
     <div class="devices">
       <div class="device"><div class="pic"><img src="../assets/v18/watch.webp" alt="Apple Watch con la próxima dosis" loading="lazy"></div><h3>Apple Watch</h3><p>Tu próxima dosis y una alarma de dosis en la muñeca, y el agua y el peso con un toque.</p></div>
       <div class="device"><div class="pic"><img src="../assets/v18/today-dark.webp" alt="Pantalla Hoy en modo oscuro" loading="lazy"></div><h3>De día y de noche</h3><p>Un modo oscuro tan tranquilo como el claro, con más contraste cuando lo necesites.</p></div>
-      <div class="device"><div class="pic"><img src="../assets/v18/panel-08.webp" alt="Recordatorios" loading="lazy"></div><h3>Recordatorios discretos</h3><p>Solo si los pides, a la hora que elijas, con una Actividad en directo el día de la dosis.</p></div>
+      <div class="device"><div class="pic"><img src="../assets/v18/panel-09.webp" alt="Recordatorios" loading="lazy"></div><h3>Recordatorios discretos</h3><p>Solo si los pides, a la hora que elijas, con una Actividad en directo el día de la dosis.</p></div>
     </div>
   </div>
 </section>
